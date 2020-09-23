@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Conjure Animals!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../monsters.js"></script>
+    <script type="text/javascript" src="conjure.js"></script>
+</head>
+<body>
+<div class="container">
+
+<h1>Conjure Animals!</h1>
+
+<form>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label for="environment">Choose the environment the spellcaster is in: (multiple allowed!)</label>
+            <select class="custom-select" id="environment" size="8" multiple>
+                
+            </select>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="level">What spell slot has been used?</label>
+                <select class="custom-select" id="level">
+                    <option value="3">Level 3</option>
+                    <option value="5">Level 5</option>
+                    <option value="7">Level 7</option>
+                    <option value="9">Level 9</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Requested Challenge Rating</label><br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="crquart" value="0.25" name="challenge" class="custom-control-input">
+                    <label class="custom-control-label" for="crquart">1/4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="crhalf" value="0.5" name="challenge" class="custom-control-input">
+                    <label class="custom-control-label" for="crhalf">1/2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="crone" value="1" name="challenge" class="custom-control-input">
+                    <label class="custom-control-label" for="crone">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="crtwo" value="2" name="challenge" class="custom-control-input">
+                    <label class="custom-control-label" for="crtwo">2</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="lower">
+                    <label class="custom-control-label" for="lower">Use "or lower" rule</label>
+                </div>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="same" checked="checked">
+                    <label class="custom-control-label" for="same">All the same monsters</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" id="submit">Get Animals!</button>
+</form>
+
+<div id="output" class="mt-3">
+
+</div>
+
+</div>
+</body>
+</html>
