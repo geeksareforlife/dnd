@@ -1,0 +1,22 @@
+{
+    "name": "geeksareforlife/dnd",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Hayward",
+            "email": "james@geeksareforlife.com"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^2.7"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "GeeksAreForLife\\DND\\": "src/"
+        }
+    }
+}
