@@ -2,6 +2,8 @@
 
 namespace GeeksAreForLife\DND\Monster;
 
+use GeeksAreForLife\Utilities\Strings;
+
 class DNDBeyondParser extends Parser
 {
 
@@ -41,6 +43,9 @@ class DNDBeyondParser extends Parser
     {
         $paras = $this->xpath->query('//p');
 
+        $section = false;
+        $trait = [];
+        $action = [];
 
         foreach ($paras as $para) {
             $class = $para->attributes->getNamedItem("class");
@@ -51,17 +56,129 @@ class DNDBeyondParser extends Parser
 
             $class = $class->value;
 
-            if ($class == "Stat-Block-Styles_Stat-Block-Title") {
+            if (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Title')) {
                 $this->monster->setName($para->nodeValue);
-            } elseif ($class == "Stat-Block-Styles_Stat-Block-Metadata") {
+            } elseif (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Metadata')) {
                 $this->processMetadata($para->nodeValue);
-            } elseif ($class == "Stat-Block-Styles_Stat-Block-Data") {
+            } elseif (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Data')) {
                 $this->processDataBlock($para);
             } else {
-                dump($class);
-            }
+                // we are into the Traits, Actions and Legendary Actions now
+                // Unfortunately, we can't split these by classes
+                // some traits (any maybe actions?) are split across multiple paras
+                // so we need to collect until we hit another one and then process
+                
+                if (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Heading')) {
+                    $section = strtolower(trim($para->nodeValue));
 
-            
+                    if ($section == "actions" and $trait != []) {
+                        //SAVE
+                        $this->monster->addTrait($trait['name'], $trait['description'], $trait['lines']);
+                        $trait = [];
+                    } elseif ($section == "legendary actions" and $action != []) {
+                        // SAVE
+                        $this->monster->addAction($action['name'], $action['description'], $action['lines']);
+                        $action = [];
+                    }
+
+                    // these lines dont have anything else on them
+                    continue;
+                } elseif ($section === false) {
+                    // we must be in Traits
+                    $section = 'traits';
+                }
+
+                if ($section == 'traits') {
+                    if (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Body')) {
+                        // we are starting a new trait, save the last one
+                        // (if we had one)
+                        
+                        //SAVE
+                        if ($trait != []) {
+                            $this->monster->addTrait($trait['name'], $trait['description'], $trait['lines']);
+                        }
+                        // split out the trait name and description
+                        $name = $this->findHeading('Sans-Serif-Character-Styles_Inline-Subhead-Sans-Serif', $para);
+                        $description = $para->nodeValue;
+                        $description = trim(str_replace($name, "", $description));
+                        $name = trim(strtolower($name));
+
+                        $trait = [
+                            'name' => $name,
+                            'description' => $description,
+                            'lines' => [],
+                        ];
+                    } elseif (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Hanging')) {
+                        // extra lines for the current trait
+                        $trait['lines'][] = $para->nodeValue;
+                    } else {
+                        dump("Error: " . $class);
+                    }
+                } elseif ($section == 'actions') {
+                    if (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Body')) {
+                        // we are starting a new action, save the last one
+                        // (if we had one)
+                        
+                        //SAVE
+                        if ($action != []) {
+                            $this->monster->addAction($action['name'], $action['description'], $action['lines']);
+                        }
+
+                        // split out the action name and description
+                        $name = $this->findHeading('Sans-Serif-Character-Styles_Inline-Subhead-Sans-Serif', $para);
+                        if ($name === false) {
+                            // nothing really here
+                            $action = [];
+                            continue;
+                        }
+
+                        $description = $para->nodeValue;
+                        $description = trim(str_replace($name, "", $description));
+                        $name = trim(strtolower($name));
+
+                        $action = [
+                            'name' => $name,
+                            'description' => $description,
+                            'lines' => [],
+                        ];
+                    } elseif (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Hanging')) {
+                        // extra lines for the current action
+                        $action['lines'][] = $para->nodeValue;
+                    } else {
+                        dump("Error: " . $class);
+                    }
+                } elseif ($section == 'legendary actions') {
+                    // classes are different with legendary actions
+                    // we have an intro and then the actions
+                    
+                    if (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Body')) {
+                        $this->monster->addLegendaryIntro($para->nodeValue);
+                    } elseif (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Hanging')) {
+                        $name = $this->findHeading('Sans-Serif-Character-Styles_Bold-Sans-Serif', $para);
+                        if ($name === false) {
+                            // nothing really here
+                            $action = [];
+                            continue;
+                        }
+
+                        $description = $para->nodeValue;
+                        $description = trim(str_replace($name, "", $description));
+                        $name = trim(strtolower($name));
+
+                        $this->monster->addLegendaryAction($name, $description);
+                    } else {
+                        dump("Error: " . $class);
+                    }
+                }
+            }
+        }
+
+        // make sure we haven't got any traits or actions hanging around
+        if ($trait != []) {
+            $this->monster->addTrait($trait['name'], $trait['description'], $trait['lines']);
+        }
+        if ($action != []) {
+            $this->monster->addAction($action['name'], $action['description'], $action['lines']);
         }
     }
 
@@ -81,25 +198,16 @@ class DNDBeyondParser extends Parser
     }
 
     protected function processDataBlock($node) {
-        $heading = $this->xpath->query('span[@class="Sans-Serif-Character-Styles_Bold-Sans-Serif"]', $node);
-        // some headings are helpfully spread across multiple spans!
-        if (count($heading) == 1) {
-            $heading = $heading[0]->nodeValue;
-        } elseif (count($heading) > 1) {
-            $text = "";
-            foreach ($heading as $headingNode) {
-                $text .= $headingNode->nodeValue;
-            }
-            $heading = $text;
-        } else {
-            // no heading?
+        $heading = $this->findHeading('Sans-Serif-Character-Styles_Bold-Sans-Serif', $node);
+
+        if ($heading === false) {
             return;
         }
 
         $fullText = $node->nodeValue;
-        $fullText = str_replace($heading . " ", "", $fullText);
+        $fullText = trim(str_replace($heading, "", $fullText));
 
-        $heading = strtolower($heading);
+        $heading = trim(strtolower($heading));
         
         // time for a big conditional!
         if ($heading == "armor class") {
@@ -113,33 +221,62 @@ class DNDBeyondParser extends Parser
             foreach ($speeds as $speed) {
                 $this->monster->addSpeed($speed['type'], $speed['distance']);
             }
+        } elseif ($heading == "saving throws") {
+            $throws = $this->parseThrows($fullText);
+            foreach ($throws as $throw) {
+                $this->monster->addSavingThrow($throw['type'], $throw['modifier']);
+            }
+        } elseif ($heading == "skills") {
+            $throws = $this->parseThrows($fullText);
+            foreach ($throws as $throw) {
+                $this->monster->addSkillThrow($throw['type'], $throw['modifier']);
+            }
+        } elseif ($heading == "damage resistances") {
+            $groups = $this->parseGroupedList($fullText);
+            $this->monster->setDamageResistances($groups);
+        } elseif ($heading == "damage immunities") {
+            $groups = $this->parseGroupedList($fullText);
+            $this->monster->setDamageImmunities($groups);
+        } elseif ($heading == "damage vulnerabilities") {
+            $groups = $this->parseGroupedList($fullText);
+            $this->monster->setDamageVulnerabilities($groups);
+        } elseif ($heading == "condition immunities") {
+            $conditions = $this->parseList($fullText);
+            foreach ($conditions as $condition) {
+                $this->monster->addConditionImmunity($condition);
+            }
+        } elseif ($heading == "senses") {
+            $senses = $this->parseSenses($fullText);
+            foreach ($senses as $sense) {
+                $this->monster->addSense($sense['sense'], $sense['range']);
+            }
+        } elseif ($heading == "languages") {
+            $this->monster->setLangauges($fullText);
+        } elseif ($heading == "challenge") {
+            $values = $this->parseValueWithParenthesis($fullText);
+            $this->monster->setChallenge($values['value'], $values['parenthesis']);
         } else {
-            dump($heading);
+            dump("Error: " . $heading);
         }
     }
 
-    protected function parseSpeedString($text)
+    protected function findHeading($class, $node)
     {
-        $return = [];
-
-        $text = strtolower($text);
-
-        $speeds = explode(', ', $text);
-        
-        foreach ($speeds as $speed) {
-            $details = [];
-            if (preg_match('/(?<type>[a-z]+ )?(?<distance>.*)/', $speed, $matches)) {
-                if ($matches['type'] == '') {
-                    $details['type'] = 'walk';
-                } else {
-                    $details['type'] = trim($matches['type']);
-                }
-                $details['distance'] = $matches['distance'];
-
-                $return[] = $details;
+        $heading = $this->xpath->query('span[@class="' . $class . '"]', $node);
+        // some headings are helpfully spread across multiple spans!
+        if (count($heading) == 1) {
+            $heading = $heading[0]->nodeValue;
+        } elseif (count($heading) > 1) {
+            $text = "";
+            foreach ($heading as $headingNode) {
+                $text .= $headingNode->nodeValue;
             }
+            $heading = $text;
+        } else {
+            // no heading?
+            return false;
         }
 
-        return $return;
+        return $heading;
     }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50a10cebdb8b58bb90ea5bd57c242024",
+    "content-hash": "b4faaf557ffa5d5ba489b0d445e71de3",
     "packages": [
         {
             "name": "filp/whoops",
@@ -66,6 +66,43 @@
                 "whoops"
             ],
             "time": "2020-06-14T09:00:00+00:00"
+        },
+        {
+            "name": "geeksareforlife/utilities",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/geeksareforlife/utilities.git",
+                "reference": "2ee7787344a5c386611f0345fb18f3e1b28f749c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/geeksareforlife/utilities/zipball/2ee7787344a5c386611f0345fb18f3e1b28f749c",
+                "reference": "2ee7787344a5c386611f0345fb18f3e1b28f749c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GeeksAreForLife\\Utilities\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Hayward",
+                    "email": "jhayward1980@gmail.com"
+                }
+            ],
+            "description": "Various general purpose utilities",
+            "homepage": "https://github.com/geeksareforlife/utilities",
+            "time": "2020-10-04T15:33:16+00:00"
         },
         {
             "name": "psr/log",

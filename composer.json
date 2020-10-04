@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "filp/whoops": "^2.7"
+        "filp/whoops": "^2.7",
+        "geeksareforlife/utilities": "^0.2.0"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.1"

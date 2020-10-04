@@ -61,6 +61,36 @@ class Monster
 
     private $speeds = [];
 
+    private $savingThrows = [];
+
+    private $skillThrows = [];
+
+    private $damageVulnerabilities = [];
+
+    private $damageResistances = [];
+
+    private $damageImmunities = [];
+
+    private $conditionImmunities = [];
+
+    private $senses;
+
+    private $languages;
+
+    private $challenge = [
+        'rating' => 0,
+        'xp'     => 0
+    ];
+
+    private $traits = [];
+
+    private $actions = [];
+
+    private $legendary = [
+        'intro'   => '',
+        'actions' => [],
+    ];
+
     public function setSource($source)
     {
         $this->source = $source;
@@ -118,5 +148,103 @@ class Monster
     public function addSpeed($type, $distance)
     {
         $this->speeds[$type] = $distance;
+    }
+
+    public function addSavingThrow($type, $modifier)
+    {
+        $this->savingThrows[$type] = $modifier;
+    }
+
+    public function addSkillThrow($type, $modifier)
+    {
+        $this->skillThrows[$type] = $modifier;
+    }
+
+    public function addConditionImmunity($condition)
+    {
+        $this->conditionImmunities[] = $condition;
+    }
+
+    public function setDamageVulnerabilities($groups)
+    {
+        $this->damageVulnerabilities = $groups;
+    }
+
+    public function setDamageResistances($groups)
+    {
+        $this->damageResistances = $groups;
+    }
+
+    public function setDamageImmunities($groups)
+    {
+        $this->damageImmunities = $groups;
+    }
+
+    public function addSense($sense, $range)
+    {
+        $this->senses[] = [
+            'sense' => $sense,
+            'range' => $range
+        ];
+    }
+
+    public function setLangauges($languages)
+    {
+        $this->languages = $languages;
+    }
+
+    public function setChallenge($rating, $xp)
+    {
+        $this->challenge['rating'] = $rating;
+        $this->challenge['xp'] = $xp;
+    }
+
+    public function addTrait($name, $description, $extra)
+    {
+        $this->traits[] = [
+            'name'        => $name,
+            'description' => $description,
+            'extra'       => $extra
+        ];
+    }
+
+    public function addAction($name, $description, $extra)
+    {
+        $action = [
+            'name'        => $name,
+            'description' => $description,
+            'extra'       => $extra
+        ];
+
+        // see if we can process the $description for a "to hit" and/or "hit"
+        
+        // first, to hit.  This will just be a modifier for a d20
+        if (preg_match('/(?<mod>(\+|\-)\d+) to hit/', $description, $matches)) {
+            $action['tohit'] = '1d20' . $matches['mod'];
+        }
+
+        // now hit. This will look something like: Hit: 8 (2d4 + 3) slashing damage
+        if (preg_match('/Hit: (?<average>\d+) \((?<dice>\d?d\d? (\+|\-) \d?)\) (?<type>[a-zA-Z ]*) damage/', $description, $matches)) {
+            $action['damage'] = [
+                'type'    => $matches['type'],
+                'average' => $matches['average'],
+                'dice'    => $matches['dice'],
+            ];
+        }
+
+        $this->actions[] = $action;
+    }
+
+    public function addLegendaryIntro($intro)
+    {
+        $this->legendary['intro'] = $intro;
+    }
+
+    public function addLegendaryAction($name, $description)
+    {
+        $this->legendary['actions'][] = [
+            'name' => $name,
+            'description' => $description,
+        ];
     }
 }
