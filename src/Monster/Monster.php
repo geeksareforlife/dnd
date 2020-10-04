@@ -224,12 +224,27 @@ class Monster
         }
 
         // now hit. This will look something like: Hit: 8 (2d4 + 3) slashing damage
-        if (preg_match('/Hit: (?<average>\d+) \((?<dice>\d?d\d? (\+|\-) \d?)\) (?<type>[a-zA-Z ]*) damage/', $description, $matches)) {
-            $action['damage'] = [
-                'type'    => $matches['type'],
-                'average' => $matches['average'],
-                'dice'    => $matches['dice'],
-            ];
+        if (strpos($description, 'Hit:') !== false) {
+            if (preg_match_all('/(?<word>(Hit:|or|plus)) (?<average>\d+) \((?<dice>\d+d\d+( (\+|\-) \d+)?)\) (?<type>[a-zA-Z ]+) damage/', $description, $matches, PREG_SET_ORDER)) {
+                $action['damages'] = [];
+
+                foreach ($matches as $match) {
+                    $damage = [
+                        'type'    => $match['type'],
+                        'average' => $match['average'],
+                        'dice'    => $match['dice'],
+                    ];
+
+                    if ($match['word'] == 'plus') {
+                        $action['damages']['plus'] = $damage;
+                    } else {
+                        if (!isset($action['damages']['or'])) {
+                            $action['damages']['or'] = [];
+                        }
+                        $action['damages']['or'][] = $damage;
+                    }
+                }
+            }
         }
 
         $this->actions[] = $action;
