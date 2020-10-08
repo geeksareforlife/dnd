@@ -69,6 +69,9 @@ class DNDBeyondParser extends Parser
                 $this->processMetadata($para->nodeValue);
             } elseif (Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Data')) {
                 $this->processDataBlock($para);
+            } elseif(Strings::startsWith($class, 'Stat-Block-Styles_Stat-Block-Bar-Object-Space')) {
+                // ignore this
+                continue;
             } else {
                 // we are into the Traits, Actions and Legendary Actions now
                 // Unfortunately, we can't split these by classes

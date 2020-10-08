@@ -41,6 +41,9 @@ abstract class Parser
     protected function cleanHTML($html)
     {
         $html = str_replace("&nbsp;", " ", $html);
+        $html = str_replace("<br>", "\n", $html);
+        $html = str_replace("<br/>", "\n", $html);
+        $html = str_replace("<br />", "\n", $html);
         return $html;
     }
 
