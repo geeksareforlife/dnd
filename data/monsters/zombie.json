@@ -1,0 +1,111 @@
+{
+    "name": "Zombie",
+    "source": "PHB",
+    "size": "medium",
+    "type": "undead",
+    "tags": [],
+    "alignment": "neutral evil",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 13,
+            "modifier": 1
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 6,
+            "modifier": -2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 16,
+            "modifier": 3
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 3,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 6,
+            "modifier": -2
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 5,
+            "modifier": -3
+        }
+    },
+    "ac": {
+        "value": 8,
+        "info": null
+    },
+    "hp": {
+        "hit points": 22,
+        "hit dice": "3d8 + 9"
+    },
+    "speeds": {
+        "walk": "20 ft."
+    },
+    "savingThrows": {
+        "wis": 0
+    },
+    "skillThrows": [],
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [
+        {
+            "condition": "",
+            "items": [
+                "poison"
+            ]
+        }
+    ],
+    "conditionImmunities": [
+        "poisoned"
+    ],
+    "senses": [
+        {
+            "sense": "darkvision",
+            "range": "60 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 8
+        }
+    ],
+    "languages": "understands the languages it knew in life but can't speak",
+    "challenge": {
+        "rating": "1\/4",
+        "xp": "50 XP"
+    },
+    "traits": [
+        {
+            "name": "undead fortitude.",
+            "description": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "slam.",
+            "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
+            "extra": [],
+            "tohit": "1d20+3",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 4,
+                        "dice": "1d6 + 1"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

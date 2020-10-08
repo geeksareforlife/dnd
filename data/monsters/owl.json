@@ -1,0 +1,100 @@
+{
+    "name": "Owl",
+    "source": "PHB",
+    "size": "tiny",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 3,
+            "modifier": -4
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 13,
+            "modifier": 1
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 8,
+            "modifier": -1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 12,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 7,
+            "modifier": -2
+        }
+    },
+    "ac": {
+        "value": 11,
+        "info": null
+    },
+    "hp": {
+        "hit points": 1,
+        "hit dice": "1d4 - 1"
+    },
+    "speeds": {
+        "walk": "5 ft.",
+        "fly": "60 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 3,
+        "stealth": 3
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "darkvision",
+            "range": "120 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 13
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": 0,
+        "xp": "10 XP"
+    },
+    "traits": [
+        {
+            "name": "flyby.",
+            "description": "The owl provokes no opportunity attacks when it flies out of an enemy's reach.",
+            "extra": []
+        },
+        {
+            "name": "keen hearing and sight.",
+            "description": "The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "talons.",
+            "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
+            "extra": [],
+            "tohit": "1d20+3"
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

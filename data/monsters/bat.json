@@ -1,0 +1,97 @@
+{
+    "name": "Bat",
+    "source": "PHB",
+    "size": "tiny",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 2,
+            "modifier": -4
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 15,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 8,
+            "modifier": -1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 12,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 4,
+            "modifier": -3
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": null
+    },
+    "hp": {
+        "hit points": 1,
+        "hit dice": "1d4 - 1"
+    },
+    "speeds": {
+        "walk": "5 ft.",
+        "fly": "30 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": [],
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "blindsight",
+            "range": "60 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 11
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": 0,
+        "xp": "10 XP"
+    },
+    "traits": [
+        {
+            "name": "echolocation.",
+            "description": "While it can't hear, the bat has no blindsight.",
+            "extra": []
+        },
+        {
+            "name": "keen hearing.",
+            "description": "The bat has advantage on Wisdom (Perception) checks that rely on hearing.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
+            "extra": [],
+            "tohit": "1d20+0"
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

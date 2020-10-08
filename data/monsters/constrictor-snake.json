@@ -1,0 +1,110 @@
+{
+    "name": "Constrictor Snake",
+    "source": "PHB",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 15,
+            "modifier": 2
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 14,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 12,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 1,
+            "modifier": -5
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 10,
+            "modifier": 0
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 3,
+            "modifier": -4
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": null
+    },
+    "hp": {
+        "hit points": 13,
+        "hit dice": "2d10 + 2"
+    },
+    "speeds": {
+        "walk": "30 ft.",
+        "swim": "30 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": [],
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "blindsight",
+            "range": "10 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 10
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": "1\/4",
+        "xp": "50 XP"
+    },
+    "traits": [],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+4",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 5,
+                        "dice": "1d6 + 2"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "constrict.",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.",
+            "extra": [],
+            "tohit": "1d20+4",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 6,
+                        "dice": "1d8 + 2"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

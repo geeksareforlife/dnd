@@ -1,0 +1,90 @@
+{
+    "name": "Riding Horse",
+    "source": "PHB",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 16,
+            "modifier": 3
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 10,
+            "modifier": 0
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 12,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 11,
+            "modifier": 0
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 7,
+            "modifier": -2
+        }
+    },
+    "ac": {
+        "value": 10,
+        "info": null
+    },
+    "hp": {
+        "hit points": 13,
+        "hit dice": "2d10 + 2"
+    },
+    "speeds": {
+        "walk": "60 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": [],
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "passive Perception",
+            "range": 10
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": "1\/4",
+        "xp": "50 XP"
+    },
+    "traits": [],
+    "actions": [
+        {
+            "name": "hooves.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 8,
+                        "dice": "2d4 + 3"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

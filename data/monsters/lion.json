@@ -1,0 +1,129 @@
+{
+    "name": "Lion",
+    "source": "PHB",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 17,
+            "modifier": 3
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 15,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 13,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 3,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 12,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 8,
+            "modifier": -1
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": null
+    },
+    "hp": {
+        "hit points": 26,
+        "hit dice": "4d10 + 4"
+    },
+    "speeds": {
+        "walk": "50 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 3,
+        "stealth": 6
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "passive Perception",
+            "range": 13
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": 1,
+        "xp": "200 XP"
+    },
+    "traits": [
+        {
+            "name": "keen smell.",
+            "description": "The lion has advantage on Wisdom (Perception) checks that rely on smell.",
+            "extra": []
+        },
+        {
+            "name": "pack tactics.",
+            "description": "The lion has advantage on attack rolls against a creature if at least one of the lion's allies is within 5 feet of the creature and isn't incapacitated.",
+            "extra": []
+        },
+        {
+            "name": "pounce.",
+            "description": "If the lion moves at least 20 feet straight toward a target right before hitting it with a claw attack, the target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can take a bonus action to make one bite attack against it.",
+            "extra": []
+        },
+        {
+            "name": "running leap.",
+            "description": "As part of its movement and after a 10-foot running start, the lion can long jump up to 25 feet.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 7,
+                        "dice": "1d8 + 3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "claw.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "slashing",
+                        "average": 6,
+                        "dice": "1d6 + 3"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

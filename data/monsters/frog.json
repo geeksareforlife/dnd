@@ -1,0 +1,98 @@
+{
+    "name": "Frog",
+    "source": "PHB",
+    "size": "tiny",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 1,
+            "modifier": -5
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 13,
+            "modifier": 1
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 8,
+            "modifier": -1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 1,
+            "modifier": -5
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 8,
+            "modifier": -1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 3,
+            "modifier": -4
+        }
+    },
+    "ac": {
+        "value": 11,
+        "info": null
+    },
+    "hp": {
+        "hit points": 1,
+        "hit dice": "1d4 - 1"
+    },
+    "speeds": {
+        "walk": "20 ft.",
+        "swim": "20 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 1,
+        "stealth": 3
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "darkvision",
+            "range": "30 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 11
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": 0,
+        "xp": "0 XP"
+    },
+    "traits": [
+        {
+            "name": "amphibious.",
+            "description": "The frog can breathe air and water.",
+            "extra": []
+        },
+        {
+            "name": "standing leap.",
+            "description": "As part of its movement and without a running start, the frog can long jump up to 10 feet and high jump up to 5 feet.",
+            "extra": []
+        },
+        {
+            "name": "",
+            "description": "",
+            "extra": []
+        }
+    ],
+    "actions": [],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "name": "Rat",
+    "source": "PHB",
+    "size": "tiny",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 2,
+            "modifier": -4
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 11,
+            "modifier": 0
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 9,
+            "modifier": -1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 10,
+            "modifier": 0
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 4,
+            "modifier": -3
+        }
+    },
+    "ac": {
+        "value": 10,
+        "info": null
+    },
+    "hp": {
+        "hit points": 1,
+        "hit dice": "1d4 - 1"
+    },
+    "speeds": {
+        "walk": "20 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": [],
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "darkvision",
+            "range": "30 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 10
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": 0,
+        "xp": "10 XP"
+    },
+    "traits": [
+        {
+            "name": "keen smell.",
+            "description": "The rat has advantage on Wisdom (Perception) checks that rely on smell.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
+            "extra": [],
+            "tohit": "1d20+0"
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

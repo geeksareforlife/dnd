@@ -1,0 +1,98 @@
+{
+    "name": "Mastiff",
+    "source": "PHB",
+    "size": "medium",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 13,
+            "modifier": 1
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 14,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 12,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 3,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 12,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 7,
+            "modifier": -2
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": null
+    },
+    "hp": {
+        "hit points": 5,
+        "hit dice": "1d8 + 1"
+    },
+    "speeds": {
+        "walk": "40 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 3
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "passive Perception",
+            "range": 13
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": "1\/8",
+        "xp": "25 XP"
+    },
+    "traits": [
+        {
+            "name": "keen hearing and smell.",
+            "description": "The mastiff has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
+            "extra": [],
+            "tohit": "1d20+3",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 4,
+                        "dice": "1d6 + 1"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

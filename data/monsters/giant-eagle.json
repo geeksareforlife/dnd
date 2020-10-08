@@ -1,0 +1,119 @@
+{
+    "name": "Giant Eagle",
+    "source": "PHB",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "neutral good",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 16,
+            "modifier": 3
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 17,
+            "modifier": 3
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 13,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 8,
+            "modifier": -1
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 14,
+            "modifier": 2
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 10,
+            "modifier": 0
+        }
+    },
+    "ac": {
+        "value": 13,
+        "info": null
+    },
+    "hp": {
+        "hit points": 26,
+        "hit dice": "4d10 + 4"
+    },
+    "speeds": {
+        "walk": "10 ft.",
+        "fly": "80 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 4
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "passive Perception",
+            "range": 14
+        }
+    ],
+    "languages": "Giant Eagle, understands Common and Auran but doesn't speak them",
+    "challenge": {
+        "rating": 1,
+        "xp": "200 XP"
+    },
+    "traits": [
+        {
+            "name": "keen sight.",
+            "description": "The eagle has advantage on Wisdom (Perception) checks that rely on sight.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "multiattack.",
+            "description": "The eagle makes two attacks: one with its beak and one with its talons.",
+            "extra": []
+        },
+        {
+            "name": "beak.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 6,
+                        "dice": "1d6 + 3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "talons.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "slashing",
+                        "average": 10,
+                        "dice": "2d6 + 3"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

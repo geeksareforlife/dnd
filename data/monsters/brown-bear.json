@@ -1,0 +1,119 @@
+{
+    "name": "Brown Bear",
+    "source": "PHB",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 19,
+            "modifier": 4
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 10,
+            "modifier": 0
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 16,
+            "modifier": 3
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 13,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 7,
+            "modifier": -2
+        }
+    },
+    "ac": {
+        "value": 11,
+        "info": "natural armor"
+    },
+    "hp": {
+        "hit points": 34,
+        "hit dice": "4d10 + 12"
+    },
+    "speeds": {
+        "walk": "40 ft.",
+        "climb": "30 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 3
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "passive Perception",
+            "range": 13
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": 1,
+        "xp": "200 XP"
+    },
+    "traits": [
+        {
+            "name": "keen smell.",
+            "description": "The bear has advantage on Wisdom (Perception) checks that rely on smell.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "multiattack.",
+            "description": "The bear makes two attacks: one with its bite and one with its claws.",
+            "extra": []
+        },
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+6",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 8,
+                        "dice": "1d8 + 4"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "claws.",
+            "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+            "extra": [],
+            "tohit": "1d20+6",
+            "damages": {
+                "or": [
+                    {
+                        "type": "slashing",
+                        "average": 11,
+                        "dice": "2d6 + 4"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

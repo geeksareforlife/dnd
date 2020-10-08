@@ -1,0 +1,123 @@
+{
+    "name": "Giant Spider",
+    "source": "PHB",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 14,
+            "modifier": 2
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 16,
+            "modifier": 3
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 12,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 11,
+            "modifier": 0
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 4,
+            "modifier": -3
+        }
+    },
+    "ac": {
+        "value": 14,
+        "info": "natural armor"
+    },
+    "hp": {
+        "hit points": 26,
+        "hit dice": "4d10 + 4"
+    },
+    "speeds": {
+        "walk": "30 ft.",
+        "climb": "30 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "stealth": 7
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "blindsight",
+            "range": "10 ft."
+        },
+        {
+            "sense": "darkvision",
+            "range": "60 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 10
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": 1,
+        "xp": "200 XP"
+    },
+    "traits": [
+        {
+            "name": "spider climb.",
+            "description": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+            "extra": []
+        },
+        {
+            "name": "web sense.",
+            "description": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.",
+            "extra": []
+        },
+        {
+            "name": "web walker.",
+            "description": "The spider ignores movement restrictions caused by webbing.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 7,
+                        "dice": "1d8 + 3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "web (recharge 5-6).",
+            "description": "Ranged Weapon Attack: +5 to hit, range 30\/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).",
+            "extra": [],
+            "tohit": "1d20+5"
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

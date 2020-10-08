@@ -1,0 +1,149 @@
+{
+    "name": "Quasit",
+    "source": "PHB",
+    "size": "tiny",
+    "type": "fiend",
+    "tags": [
+        "demon",
+        "shapechanger"
+    ],
+    "alignment": "chaotic evil",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 5,
+            "modifier": -3
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 17,
+            "modifier": 3
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 10,
+            "modifier": 0
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 7,
+            "modifier": -2
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 10,
+            "modifier": 0
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 10,
+            "modifier": 0
+        }
+    },
+    "ac": {
+        "value": 13,
+        "info": null
+    },
+    "hp": {
+        "hit points": 7,
+        "hit dice": "3d4"
+    },
+    "speeds": {
+        "walk": "40 ft. (10 ft.",
+        "fly": "40 ft. in bat form; 40 ft.",
+        "climb": "40 ft. in centipede form; 40 ft.",
+        "swim": "40 ft. in toad form)"
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "stealth": 5
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [
+        {
+            "condition": "",
+            "items": [
+                "cold",
+                "fire",
+                "lightning"
+            ]
+        },
+        {
+            "condition": "nonmagical attacks",
+            "items": [
+                "bludgeoning",
+                "piercing",
+                "slashing"
+            ]
+        }
+    ],
+    "damageImmunities": [
+        {
+            "condition": "",
+            "items": [
+                "poison"
+            ]
+        }
+    ],
+    "conditionImmunities": [
+        "poisoned"
+    ],
+    "senses": [
+        {
+            "sense": "darkvision",
+            "range": "120 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 10
+        }
+    ],
+    "languages": "Abyssal, Common",
+    "challenge": {
+        "rating": 1,
+        "xp": "200 XP"
+    },
+    "traits": [
+        {
+            "name": "shapechanger.",
+            "description": "The quasit can use its action to polymorph into the beast form of a bat, centipede, or toad, or into its demon form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying is not transformed. It reverts to its demon form if it dies.",
+            "extra": []
+        },
+        {
+            "name": "magic resistance.",
+            "description": "The quasit has advantage on saving throws against spells and other magical effects.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "claws (bite in beast form).",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage. If the target is a creature, it must succeed on a DC 10 Constitution saving throw or take 5 (2d4) poison damage and become poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect early on a success.",
+            "extra": [],
+            "tohit": "1d20+4",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 5,
+                        "dice": "1d4 + 3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "scare (1\/day).",
+            "description": "One creature of the quasit's choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect early on a success.",
+            "extra": []
+        },
+        {
+            "name": "invisibility.",
+            "description": "The quasit magically turns invisible until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it.",
+            "extra": []
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

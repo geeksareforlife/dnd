@@ -1,0 +1,90 @@
+{
+    "name": "Raven",
+    "source": "PHB",
+    "size": "tiny",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 2,
+            "modifier": -4
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 14,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 8,
+            "modifier": -1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 12,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 6,
+            "modifier": -2
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": null
+    },
+    "hp": {
+        "hit points": 1,
+        "hit dice": "1d4 - 1"
+    },
+    "speeds": {
+        "walk": "10 ft.",
+        "fly": "50 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 3
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "passive Perception",
+            "range": 13
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": 0,
+        "xp": "10 XP"
+    },
+    "traits": [
+        {
+            "name": "mimicry.",
+            "description": "The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "beak.",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
+            "extra": [],
+            "tohit": "1d20+4"
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

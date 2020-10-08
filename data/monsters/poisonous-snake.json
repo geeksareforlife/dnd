@@ -1,0 +1,86 @@
+{
+    "name": "Poisonous Snake",
+    "source": "PHB",
+    "size": "tiny",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 2,
+            "modifier": -4
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 16,
+            "modifier": 3
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 11,
+            "modifier": 0
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 1,
+            "modifier": -5
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 10,
+            "modifier": 0
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 3,
+            "modifier": -4
+        }
+    },
+    "ac": {
+        "value": 13,
+        "info": null
+    },
+    "hp": {
+        "hit points": 2,
+        "hit dice": "1d4"
+    },
+    "speeds": {
+        "walk": "30 ft.",
+        "swim": "30 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": [],
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "blindsight",
+            "range": "10 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 10
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": "1\/8",
+        "xp": "25 XP"
+    },
+    "traits": [],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.",
+            "extra": [],
+            "tohit": "1d20+5"
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}
