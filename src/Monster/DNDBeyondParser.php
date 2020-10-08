@@ -11,6 +11,13 @@ class DNDBeyondParser extends Parser
     {
         $html = preg_replace('/\<img[^\>]+\>+/', "", $_POST['monsterHTML']);
 
+        // that first one is an en-dash (\u2013) 
+        $html = str_replace('–', '-', $html);
+        // this is an em-dash (\u2014)
+        $html = str_replace('—', '-', $html);
+        // we don't want the fancy apostrophes (\u2019)
+        $html = str_replace('’', "'", $html);        
+
         return parent::cleanHTML($html);
     }
 
