@@ -59,7 +59,10 @@ class Monster
         'hit dice'   => ''
     ];
 
-    private $speeds = [];
+    private $speeds = [
+        'core'  => [],
+        'forms' => [],
+    ];
 
     private $savingThrows = [];
 
@@ -190,9 +193,16 @@ class Monster
         $this->hp['hit dice'] = $dice;
     }
 
-    public function addSpeed($type, $distance)
+    public function addSpeed($type, $distance, $form = 'core')
     {
-        $this->speeds[$type] = $distance;
+        if ($form == 'core') {
+            $this->speeds['core'][$type] = $distance;
+        } else {
+            if (!isset($this->speeds['forms'][$form])) {
+                $this->speeds['forms'][$form] = [];
+            }
+            $this->speeds['forms'][$form][$type] = $distance;
+        }
     }
 
     public function addSavingThrow($type, $modifier)
