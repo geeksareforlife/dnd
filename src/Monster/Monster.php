@@ -91,6 +91,38 @@ class Monster
         'actions' => [],
     ];
 
+    public function getJson()
+    {
+        // set up a array for conversion into JSON
+        // this will end up as an object in JSON
+        $monster = [
+            'name'                  => $this->name,
+            'source'                => $this->source,
+            'size'                  => $this->size,
+            'type'                  => $this->type,
+            'tags'                  => $this->tags,
+            'alignment'             => $this->alignment,
+            'abilities'             => $this->abilityScores,
+            'ac'                    => $this->ac,
+            'hp'                    => $this->hp,
+            'speeds'                => $this->speeds,
+            'savingThrows'          => $this->savingThrows,
+            'skillThrows'           => $this->skillThrows,
+            'damageVulnerabilities' => $this->damageVulnerabilities,
+            'damageResistances'     => $this->damageResistances,
+            'damageImmunities'      => $this->damageImmunities,
+            'conditionImmunities'   => $this->conditionImmunities,
+            'senses'                => $this->senses,
+            'languages'             => $this->languages,
+            'challenge'             => $this->challenge,
+            'traits'                => $this->traits,
+            'actions'               => $this->actions,
+            'legendary'             => $this->legendary,
+        ];
+
+        return json_encode($monster, JSON_NUMERIC_CHECK | JSON_PRETTY_PRINT);
+    }
+
     public function setSource($source)
     {
         $this->source = $source;
@@ -99,6 +131,19 @@ class Monster
     public function setName($name)
     {
         $this->name = $name;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function getSlug()
+    {
+        $slug = strtolower($this->name);
+        $slug = str_replace(' ', '-', $slug);
+
+        return $slug;
     }
 
     public function setSize($size)
