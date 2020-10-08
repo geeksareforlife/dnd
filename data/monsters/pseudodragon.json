@@ -1,0 +1,133 @@
+{
+    "name": "Pseudodragon",
+    "source": "PHB",
+    "size": "tiny",
+    "type": "dragon",
+    "tags": [],
+    "alignment": "neutral good",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 6,
+            "modifier": -2
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 15,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 13,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 10,
+            "modifier": 0
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 12,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 10,
+            "modifier": 0
+        }
+    },
+    "ac": {
+        "value": 13,
+        "info": "natural armor"
+    },
+    "hp": {
+        "hit points": 7,
+        "hit dice": "2d4 + 2"
+    },
+    "speeds": {
+        "walk": "15 ft.",
+        "fly": "60 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 3,
+        "stealth": 4
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "blindsight",
+            "range": "10 ft."
+        },
+        {
+            "sense": "darkvision",
+            "range": "60 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 13
+        }
+    ],
+    "languages": "understands Common and Draconic but doesn't speak",
+    "challenge": {
+        "rating": "1\/4",
+        "xp": "50 XP"
+    },
+    "traits": [
+        {
+            "name": "keen senses.",
+            "description": "The pseudodragon has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell.",
+            "extra": []
+        },
+        {
+            "name": "magic resistance.",
+            "description": "The pseudodragon has advantage on saving throws against spells and other magical effects.",
+            "extra": []
+        },
+        {
+            "name": "limited telepathy.",
+            "description": "The pseudodragon can magically communicate simple ideas, emotions, and images telepathically with any creature within 100 feet of it that can understand a language.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+4",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 4,
+                        "dice": "1d4 + 2"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "sting.",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. If the saving throw fails by 5 or more, the target falls unconscious for the same duration, or until it takes damage or another creature uses an action to wake it.",
+            "extra": [],
+            "tohit": "1d20+4",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 4,
+                        "dice": "1d4 + 2"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

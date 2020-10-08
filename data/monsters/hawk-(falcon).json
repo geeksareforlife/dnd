@@ -1,0 +1,90 @@
+{
+    "name": "Hawk (Falcon)",
+    "source": "PHB",
+    "size": "tiny",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 5,
+            "modifier": -3
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 16,
+            "modifier": 3
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 8,
+            "modifier": -1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 14,
+            "modifier": 2
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 6,
+            "modifier": -2
+        }
+    },
+    "ac": {
+        "value": 13,
+        "info": null
+    },
+    "hp": {
+        "hit points": 1,
+        "hit dice": "1d4 - 1"
+    },
+    "speeds": {
+        "walk": "10 ft.",
+        "fly": "60 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 4
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "passive Perception",
+            "range": 14
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": 0,
+        "xp": "10 XP"
+    },
+    "traits": [
+        {
+            "name": "keen sight.",
+            "description": "The hawk has advantage on Wisdom (Perception) checks that rely on sight.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "talons.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
+            "extra": [],
+            "tohit": "1d20+5"
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

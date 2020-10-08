@@ -1,0 +1,126 @@
+{
+    "name": "Skeleton",
+    "source": "PHB",
+    "size": "medium",
+    "type": "undead",
+    "tags": [],
+    "alignment": "lawful evil",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 10,
+            "modifier": 0
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 14,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 15,
+            "modifier": 2
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 6,
+            "modifier": -2
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 8,
+            "modifier": -1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 5,
+            "modifier": -3
+        }
+    },
+    "ac": {
+        "value": 13,
+        "info": "armor scraps"
+    },
+    "hp": {
+        "hit points": 13,
+        "hit dice": "2d8 + 4"
+    },
+    "speeds": {
+        "walk": "30 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": [],
+    "damageVulnerabilities": [
+        {
+            "condition": "",
+            "items": [
+                "bludgeoning"
+            ]
+        }
+    ],
+    "damageResistances": [],
+    "damageImmunities": [
+        {
+            "condition": "",
+            "items": [
+                "poison"
+            ]
+        }
+    ],
+    "conditionImmunities": [
+        "exhaustion",
+        "poisoned"
+    ],
+    "senses": [
+        {
+            "sense": "darkvision",
+            "range": "60 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 9
+        }
+    ],
+    "languages": "understands all languages it knew in life but can't speak",
+    "challenge": {
+        "rating": "1\/4",
+        "xp": "50 XP"
+    },
+    "traits": [],
+    "actions": [
+        {
+            "name": "shortsword.",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+4",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 5,
+                        "dice": "1d6 + 2"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "shortbow.",
+            "description": "Ranged Weapon Attack: +4 to hit, range 80\/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+4",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 5,
+                        "dice": "1d6 + 2"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

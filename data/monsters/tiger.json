@@ -1,0 +1,123 @@
+{
+    "name": "Tiger",
+    "source": "PHB",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 17,
+            "modifier": 3
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 15,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 14,
+            "modifier": 2
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 3,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 12,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 8,
+            "modifier": -1
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": null
+    },
+    "hp": {
+        "hit points": 37,
+        "hit dice": "5d10 + 10"
+    },
+    "speeds": {
+        "walk": "40 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 3,
+        "stealth": 6
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "darkvision",
+            "range": "60 ft."
+        },
+        {
+            "sense": "passive Perception",
+            "range": 13
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": 1,
+        "xp": "200 XP"
+    },
+    "traits": [
+        {
+            "name": "keen smell.",
+            "description": "The tiger has advantage on Wisdom (Perception) checks that rely on smell.",
+            "extra": []
+        },
+        {
+            "name": "pounce.",
+            "description": "If the tiger moves at least 20 feet straight toward a creature right before hitting it with a claw attack, the target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can take a bonus action to make one bite attack against it.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 8,
+                        "dice": "1d10 + 3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "claw.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "slashing",
+                        "average": 7,
+                        "dice": "1d8 + 3"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "name": "Mule",
+    "source": "PHB",
+    "size": "medium",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 14,
+            "modifier": 2
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 10,
+            "modifier": 0
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 13,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 10,
+            "modifier": 0
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 5,
+            "modifier": -3
+        }
+    },
+    "ac": {
+        "value": 10,
+        "info": null
+    },
+    "hp": {
+        "hit points": 11,
+        "hit dice": "2d8 + 2"
+    },
+    "speeds": {
+        "walk": "40 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": [],
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "passive Perception",
+            "range": 10
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": "1\/8",
+        "xp": "25 XP"
+    },
+    "traits": [
+        {
+            "name": "beast of burden.",
+            "description": "The mule is considered to be a Large animal for the purpose of determining its carrying capacity.",
+            "extra": []
+        },
+        {
+            "name": "sure-footed.",
+            "description": "The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "hooves.",
+            "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
+            "extra": [],
+            "tohit": "1d20+2",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 4,
+                        "dice": "1d4 + 2"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

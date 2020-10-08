@@ -1,0 +1,120 @@
+{
+    "name": "Panther",
+    "source": "PHB",
+    "size": "medium",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 14,
+            "modifier": 2
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 15,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 10,
+            "modifier": 0
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 3,
+            "modifier": -4
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 14,
+            "modifier": 2
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 7,
+            "modifier": -2
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": null
+    },
+    "hp": {
+        "hit points": 13,
+        "hit dice": "3d8"
+    },
+    "speeds": {
+        "walk": "50 ft.",
+        "climb": "40 ft."
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 4,
+        "stealth": 6
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [
+        {
+            "sense": "passive Perception",
+            "range": 14
+        }
+    ],
+    "languages": "-",
+    "challenge": {
+        "rating": "1\/4",
+        "xp": "50 XP"
+    },
+    "traits": [
+        {
+            "name": "keen smell.",
+            "description": "The panther has advantage on Wisdom (Perception) checks that rely on smell.",
+            "extra": []
+        },
+        {
+            "name": "pounce.",
+            "description": "If the panther moves at least 20 feet straight toward a creature right before hitting it with a claw attack, the target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can take a bonus action to make one bite attack against it.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+4",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 5,
+                        "dice": "1d6 + 2"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "claw.",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
+            "extra": [],
+            "tohit": "1d20+4",
+            "damages": {
+                "or": [
+                    {
+                        "type": "slashing",
+                        "average": 4,
+                        "dice": "1d4 + 2"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}
