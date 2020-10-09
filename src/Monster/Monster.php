@@ -237,10 +237,7 @@ class Monster
 
     public function addSense($sense, $range)
     {
-        $this->senses[] = [
-            'sense' => $sense,
-            'range' => $range
-        ];
+        $this->senses[$sense] = $range;
     }
 
     public function setLangauges($languages)
