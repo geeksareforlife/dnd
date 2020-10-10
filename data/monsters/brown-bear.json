@@ -46,8 +46,11 @@
         "hit dice": "4d10 + 12"
     },
     "speeds": {
-        "walk": "40 ft.",
-        "climb": "30 ft."
+        "core": {
+            "walk": "40 ft.",
+            "climb": "30 ft."
+        },
+        "forms": []
     },
     "savingThrows": [],
     "skillThrows": {
@@ -57,12 +60,9 @@
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
-    "senses": [
-        {
-            "sense": "passive Perception",
-            "range": 13
-        }
-    ],
+    "senses": {
+        "passive Perception": 13
+    },
     "languages": "-",
     "challenge": {
         "rating": 1,

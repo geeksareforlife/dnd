@@ -103,16 +103,10 @@
     "conditionImmunities": [
         "poisoned"
     ],
-    "senses": [
-        {
-            "sense": "darkvision",
-            "range": "120 ft."
-        },
-        {
-            "sense": "passive Perception",
-            "range": 11
-        }
-    ],
+    "senses": {
+        "darkvision": "120 ft.",
+        "passive Perception": 11
+    },
     "languages": "Infernal, Common",
     "challenge": {
         "rating": 1,

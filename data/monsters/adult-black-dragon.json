@@ -46,9 +46,12 @@
         "hit dice": "17d12 + 85"
     },
     "speeds": {
-        "walk": "40 ft.",
-        "fly": "80 ft.",
-        "swim": "40 ft."
+        "core": {
+            "walk": "40 ft.",
+            "fly": "80 ft.",
+            "swim": "40 ft."
+        },
+        "forms": []
     },
     "savingThrows": {
         "dex": 7,
@@ -71,20 +74,11 @@
         }
     ],
     "conditionImmunities": [],
-    "senses": [
-        {
-            "sense": "blindsight",
-            "range": "60 ft."
-        },
-        {
-            "sense": "darkvision",
-            "range": "120 ft."
-        },
-        {
-            "sense": "passive Perception",
-            "range": 21
-        }
-    ],
+    "senses": {
+        "blindsight": "60 ft.",
+        "darkvision": "120 ft.",
+        "passive Perception": 21
+    },
     "languages": "Common, Draconic",
     "challenge": {
         "rating": 14,
@@ -160,17 +154,17 @@
         },
         {
             "name": "frightful presence.",
-            "description": "Each creature of the dragon\u2019s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature\u2019s saving throw is successful or the effect ends for it, the creature is immune to the dragon\u2019s Frightful Presence for the next 24 hours.",
+            "description": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
             "extra": []
         },
         {
-            "name": "acid breath (recharge 5\u20136).",
+            "name": "acid breath (recharge 5-6).",
             "description": "The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.",
             "extra": []
         }
     ],
     "legendary": {
-        "intro": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature\u2019s turn. The dragon regains spent legendary actions at the start of its turn.",
+        "intro": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "actions": [
             {
                 "name": "detect.",

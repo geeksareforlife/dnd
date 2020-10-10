@@ -46,8 +46,11 @@
         "hit dice": "4d8 + 4"
     },
     "speeds": {
-        "walk": "0 ft.",
-        "swim": "40 ft."
+        "core": {
+            "walk": "0 ft.",
+            "swim": "40 ft."
+        },
+        "forms": []
     },
     "savingThrows": [],
     "skillThrows": {
@@ -57,16 +60,10 @@
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
-    "senses": [
-        {
-            "sense": "blindsight",
-            "range": "30 ft."
-        },
-        {
-            "sense": "passive Perception",
-            "range": 12
-        }
-    ],
+    "senses": {
+        "blindsight": "30 ft.",
+        "passive Perception": 12
+    },
     "languages": "-",
     "challenge": {
         "rating": "1\/2",

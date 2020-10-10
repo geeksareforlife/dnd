@@ -46,7 +46,10 @@
         "hit dice": "2d8 + 4"
     },
     "speeds": {
-        "walk": "30 ft."
+        "core": {
+            "walk": "30 ft."
+        },
+        "forms": []
     },
     "savingThrows": [],
     "skillThrows": [],
@@ -71,16 +74,10 @@
         "exhaustion",
         "poisoned"
     ],
-    "senses": [
-        {
-            "sense": "darkvision",
-            "range": "60 ft."
-        },
-        {
-            "sense": "passive Perception",
-            "range": 9
-        }
-    ],
+    "senses": {
+        "darkvision": "60 ft.",
+        "passive Perception": 9
+    },
     "languages": "understands all languages it knew in life but can't speak",
     "challenge": {
         "rating": "1\/4",

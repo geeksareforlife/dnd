@@ -46,8 +46,11 @@
         "hit dice": "4d10 + 4"
     },
     "speeds": {
-        "walk": "30 ft.",
-        "climb": "30 ft."
+        "core": {
+            "walk": "30 ft.",
+            "climb": "30 ft."
+        },
+        "forms": []
     },
     "savingThrows": [],
     "skillThrows": {
@@ -57,20 +60,11 @@
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
-    "senses": [
-        {
-            "sense": "blindsight",
-            "range": "10 ft."
-        },
-        {
-            "sense": "darkvision",
-            "range": "60 ft."
-        },
-        {
-            "sense": "passive Perception",
-            "range": 10
-        }
-    ],
+    "senses": {
+        "blindsight": "10 ft.",
+        "darkvision": "60 ft.",
+        "passive Perception": 10
+    },
     "languages": "-",
     "challenge": {
         "rating": 1,

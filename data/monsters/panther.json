@@ -46,8 +46,11 @@
         "hit dice": "3d8"
     },
     "speeds": {
-        "walk": "50 ft.",
-        "climb": "40 ft."
+        "core": {
+            "walk": "50 ft.",
+            "climb": "40 ft."
+        },
+        "forms": []
     },
     "savingThrows": [],
     "skillThrows": {
@@ -58,12 +61,9 @@
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
-    "senses": [
-        {
-            "sense": "passive Perception",
-            "range": 14
-        }
-    ],
+    "senses": {
+        "passive Perception": 14
+    },
     "languages": "-",
     "challenge": {
         "rating": "1\/4",
