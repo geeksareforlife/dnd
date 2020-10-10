@@ -1,0 +1,25 @@
+body {
+    background: #e0e0e0;
+}
+
+.container {
+    background: #ffffff;
+}
+
+#output {
+    height: 300px;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+
+.ability {
+    text-align: center;
+}
+
+p, li {
+    font-size: 0.9rem;
+}
+
+p, ul {
+    margin-bottom: 0.5rem;
+}

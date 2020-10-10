@@ -46,8 +46,11 @@
         "hit dice": "2d4 + 2"
     },
     "speeds": {
-        "walk": "15 ft.",
-        "fly": "60 ft."
+        "core": {
+            "walk": "15 ft.",
+            "fly": "60 ft."
+        },
+        "forms": []
     },
     "savingThrows": [],
     "skillThrows": {
@@ -58,20 +61,11 @@
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
-    "senses": [
-        {
-            "sense": "blindsight",
-            "range": "10 ft."
-        },
-        {
-            "sense": "darkvision",
-            "range": "60 ft."
-        },
-        {
-            "sense": "passive Perception",
-            "range": 13
-        }
-    ],
+    "senses": {
+        "blindsight": "10 ft.",
+        "darkvision": "60 ft.",
+        "passive Perception": 13
+    },
     "languages": "understands Common and Draconic but doesn't speak",
     "challenge": {
         "rating": "1\/4",

@@ -228,8 +228,17 @@ class DNDBeyondParser extends Parser
             $this->monster->setHP($values['value'], $values['parenthesis']);
         } elseif ($heading == "speed") {
             $speeds = $this->parseSpeedString($fullText);
-            foreach ($speeds as $speed) {
+            foreach ($speeds['core'] as $speed) {
                 $this->monster->addSpeed($speed['type'], $speed['distance']);
+            }
+
+            if (count($speeds['forms']) > 0) {
+                foreach ($speeds['forms'] as $formSpeeds) {
+                    $form = $formSpeeds['form'];
+                    foreach ($formSpeeds['speeds'] as $speed) {
+                        $this->monster->addSpeed($speed['type'], $speed['distance'], $form);
+                    }
+                }
             }
         } elseif ($heading == "saving throws") {
             $throws = $this->parseThrows($fullText);

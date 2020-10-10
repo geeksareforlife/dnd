@@ -51,7 +51,29 @@ abstract class Parser
 
     protected function parseSpeedString($text)
     {
-        $speeds = [];
+        $speeds = [
+            'core'  => [],
+            'forms' => [],
+        ];
+
+        // first, does this have other forms?
+        if (preg_match('/\((.*)\)/', $text, $matches)) {
+            $extras = $matches[1];
+            $text = str_replace('(' . $extras . ')', '', $text);
+
+            $extras = explode('; ', $extras);
+            foreach ($extras as $extra) {
+                if (preg_match('/(.*) in (.*)/', $extra, $matches)) {
+                    $form = $matches[2];
+                    $formSpeeds = $this->parseSpeedString($matches[1]);
+                    $speeds['forms'][] = [
+                        'form'      => $form,
+                        'speeds'    => $formSpeeds['core'],
+                    ];
+                }
+            }
+
+        }
 
         $list = $this->parseList($text);
         
@@ -65,7 +87,7 @@ abstract class Parser
                 }
                 $speed['distance'] = $matches['distance'];
 
-                $speeds[] = $speed;
+                $speeds['core'][] = $speed;
             }
         }
 

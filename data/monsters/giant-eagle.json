@@ -46,8 +46,11 @@
         "hit dice": "4d10 + 4"
     },
     "speeds": {
-        "walk": "10 ft.",
-        "fly": "80 ft."
+        "core": {
+            "walk": "10 ft.",
+            "fly": "80 ft."
+        },
+        "forms": []
     },
     "savingThrows": [],
     "skillThrows": {
@@ -57,12 +60,9 @@
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
-    "senses": [
-        {
-            "sense": "passive Perception",
-            "range": 14
-        }
-    ],
+    "senses": {
+        "passive Perception": 14
+    },
     "languages": "Giant Eagle, understands Common and Auran but doesn't speak them",
     "challenge": {
         "rating": 1,

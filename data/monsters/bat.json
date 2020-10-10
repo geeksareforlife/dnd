@@ -46,8 +46,11 @@
         "hit dice": "1d4 - 1"
     },
     "speeds": {
-        "walk": "5 ft.",
-        "fly": "30 ft."
+        "core": {
+            "walk": "5 ft.",
+            "fly": "30 ft."
+        },
+        "forms": []
     },
     "savingThrows": [],
     "skillThrows": [],
@@ -55,16 +58,10 @@
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
-    "senses": [
-        {
-            "sense": "blindsight",
-            "range": "60 ft."
-        },
-        {
-            "sense": "passive Perception",
-            "range": 11
-        }
-    ],
+    "senses": {
+        "blindsight": "60 ft.",
+        "passive Perception": 11
+    },
     "languages": "-",
     "challenge": {
         "rating": 0,

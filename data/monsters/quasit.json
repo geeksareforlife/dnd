@@ -49,10 +49,23 @@
         "hit dice": "3d4"
     },
     "speeds": {
-        "walk": "40 ft. (10 ft.",
-        "fly": "40 ft. in bat form; 40 ft.",
-        "climb": "40 ft. in centipede form; 40 ft.",
-        "swim": "40 ft. in toad form)"
+        "core": {
+            "walk": "40 ft. "
+        },
+        "forms": {
+            "bat form": {
+                "walk": "10 ft.",
+                "fly": "40 ft."
+            },
+            "centipede form": {
+                "walk": "40 ft.",
+                "climb": "40 ft."
+            },
+            "toad form": {
+                "walk": "40 ft.",
+                "swim": "40 ft."
+            }
+        }
     },
     "savingThrows": [],
     "skillThrows": {
@@ -88,16 +101,10 @@
     "conditionImmunities": [
         "poisoned"
     ],
-    "senses": [
-        {
-            "sense": "darkvision",
-            "range": "120 ft."
-        },
-        {
-            "sense": "passive Perception",
-            "range": 10
-        }
-    ],
+    "senses": {
+        "darkvision": "120 ft.",
+        "passive Perception": 10
+    },
     "languages": "Abyssal, Common",
     "challenge": {
         "rating": 1,
