@@ -19,7 +19,7 @@ $(document).ready(function() {
 function sizeOutput()
 {
     column = $('#output').parent();
-    infobar = $('.row', column);
+    infobar = $('#info', column);
     height = column.height() - infobar.height() - 20;
     $('#output').height(height);
 }
@@ -42,6 +42,13 @@ function getMonster()
     })
 
     return monster;
+}
+
+function outputSingleDiceRoll(message, roll)
+{
+    var output = message + ' (' + roll.diceText + '): ' + roll.result;
+
+    $('#output').prepend('<p class="single-roll">' + output + '</p>');
 }
 
 function displayMonster()
@@ -71,6 +78,8 @@ function displayMonster()
 
     var hp = DiceRoller.roll(monster.hp['hit dice']);
     $('#hp').html(hp.result);
+
+    outputSingleDiceRoll("Rolling HP", hp);
 
     // Speeds
     var speedString = "<strong>Speed</strong> " + monster.speeds.core.walk;
@@ -231,8 +240,7 @@ function simpleList(list) {
 function getSlug()
 {
     var type = getUrlParameter('type');
-    const regex = / /gi;
-    return type.replace(regex, '-').toLowerCase();
+    return type.replaceAll(' ', '-').toLowerCase();
 }
 
 function getBaseUrl()
