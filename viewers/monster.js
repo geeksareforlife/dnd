@@ -4,6 +4,8 @@ var monsterPromise = getMonster();
 
 var monster = [];
 
+var currentHP = 0;
+
 // this will either be on the Query String, or we will default to the monster type
 var monsterName = "";
 
@@ -13,6 +15,8 @@ $(document).ready(function() {
         displayMonster();
 
         sizeOutput();
+
+        $('#hp-form .btn').click(changeHP);
     })
 });
 
@@ -22,6 +26,32 @@ function sizeOutput()
     infobar = $('#info', column);
     height = column.height() - infobar.height() - 20;
     $('#output').height(height);
+}
+
+function changeHP()
+{
+    var mod = 1;
+    var textColour = '#28a745';
+    if ($(this).attr('id') == 'hp-reduce') {
+        mod = -1;
+        textColour = '#dc3545';
+    }
+
+    defaultText = '#212529';
+
+    var amount = $('#hp-change').val();
+
+    currentHP = currentHP + (mod * amount);
+
+    $('#hp').html(currentHP);
+
+    $('#hp').parent().animate({color: textColour}, 200, function() {
+        $('#hp').parent().animate({color: defaultText}, 1000);
+    });
+
+    $('#hp-change').val('');
+
+    return false;
 }
 
 function getMonster()
@@ -176,7 +206,8 @@ function displayMonster()
     $('#ac').html(monster.ac.value);
 
     var hp = DiceRoller.roll(monster.hp['hit dice']);
-    $('#hp').html(hp.result);
+    currentHP = hp.result;
+    $('#hp').html(currentHP);
 
     outputSingleDiceRoll("Rolling HP", hp);
 
