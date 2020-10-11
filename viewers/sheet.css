@@ -23,3 +23,8 @@ p, li {
 p, ul {
     margin-bottom: 0.5rem;
 }
+
+#output .single-roll,
+#output .action-roll {
+    margin-bottom: 1rem;
+}

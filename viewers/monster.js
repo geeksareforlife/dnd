@@ -4,6 +4,8 @@ var monsterPromise = getMonster();
 
 var monster = [];
 
+var currentHP = 0;
+
 // this will either be on the Query String, or we will default to the monster type
 var monsterName = "";
 
@@ -13,6 +15,8 @@ $(document).ready(function() {
         displayMonster();
 
         sizeOutput();
+
+        $('#hp-form .btn').click(changeHP);
     })
 });
 
@@ -22,6 +26,32 @@ function sizeOutput()
     infobar = $('#info', column);
     height = column.height() - infobar.height() - 20;
     $('#output').height(height);
+}
+
+function changeHP()
+{
+    var mod = 1;
+    var textColour = '#28a745';
+    if ($(this).attr('id') == 'hp-reduce') {
+        mod = -1;
+        textColour = '#dc3545';
+    }
+
+    defaultText = '#212529';
+
+    var amount = $('#hp-change').val();
+
+    currentHP = currentHP + (mod * amount);
+
+    $('#hp').html(currentHP);
+
+    $('#hp').parent().animate({color: textColour}, 200, function() {
+        $('#hp').parent().animate({color: defaultText}, 1000);
+    });
+
+    $('#hp-change').val('');
+
+    return false;
 }
 
 function getMonster()
@@ -44,11 +74,110 @@ function getMonster()
     return monster;
 }
 
+function createSingleRollLink(rolling, linkText, diceText)
+{
+    var link = '<a href="javascript:singleDiceRoll(\'Rolling ' + rolling + '\', \'' + diceText + '\')">';
+    link += linkText;
+    link += '</a>';
+
+    return link;
+}
+
+function singleDiceRoll(message, diceText)
+{
+    var roll = DiceRoller.roll(diceText);
+    outputSingleDiceRoll(message, roll);
+}
+
 function outputSingleDiceRoll(message, roll)
 {
-    var output = message + ' (' + roll.diceText + '): ' + roll.result;
+    if (message == '') {
+        var output = roll.diceText + ': ';
+    } else {
+        var output = message + ' (' + roll.diceText + '): ';
+    }
+    output += roll.result;
 
     $('#output').prepend('<p class="single-roll">' + output + '</p>');
+}
+
+function createActionRollLink(action, index)
+{
+    var link = '<a href="javascript:actionRoll(' + index + ')">';
+    link += action;
+    link += '</a>';
+
+    return link;
+}
+
+function actionRoll(index)
+{
+    var action = monster.actions[index];
+
+    var result = {};
+
+    result.hit = DiceRoller.roll(action.tohit);
+    // hit will always be one dice, is it a crit?
+    result.crit = false;
+    if (result.hit.parts[0].dice[0] == 20) {
+        result.crit = true; 
+    }
+
+    result.damage = [];
+
+    // just roll the first option for now. need to find an elegant way to offer the choice
+    result.damage[0] = {
+        damage: DiceRoller.roll(action.damages.or[0].dice),
+        type: action.damages.or[0].type
+    };
+
+    if (action.damages.hasOwnProperty('plus')) {
+        result.damage[1] = {
+            damage: DiceRoller.roll(action.damages.plus.dice),
+            type: action.damages.plus.type
+        };
+    }
+
+    if (result.crit) {
+        result.critDamage = [];
+
+        // do it all again, but this time without the modifiers
+        var regex = /\s?[\-+]\s?\d+/;
+        var diceText = action.damages.or[0].dice.replace(regex, '');
+        result.critDamage[0] = {
+            damage: DiceRoller.roll(diceText),
+            type: action.damages.or[0].type
+        };
+
+        if (action.damages.hasOwnProperty('plus')) {
+            diceText = action.damages.plus.dice.replace(regex, '');
+            result.critDamage[1] = {
+                damage: DiceRoller.roll(diceText),
+                type: action.damages.plus.type
+            };
+        }
+    }
+
+    outputActionRoll(action.name, result);
+}
+
+function outputActionRoll(name, result)
+{
+    console.log(result);
+
+    var output = '<p class="action-roll"><strong>' + capitalise(name) + '</strong><br>';
+    output += 'To Hit: ' + result.hit.result + '<br>';
+    for (var i = 0; i < result.damage.length; i++) {
+        output += capitalise(result.damage[i].type) + ': ' + result.damage[i].damage.result + '<br>';
+    }
+    if (result.crit) {
+        output += 'CRITICAL HIT!' + '<br>'
+        for (var i = 0; i < result.critDamage.length; i++) {
+            output += capitalise(result.critDamage[i].type) + ': ' + result.critDamage[i].damage.result + '<br>';
+        }
+    }
+
+    $('#output').prepend(output);
 }
 
 function displayMonster()
@@ -77,7 +206,8 @@ function displayMonster()
     $('#ac').html(monster.ac.value);
 
     var hp = DiceRoller.roll(monster.hp['hit dice']);
-    $('#hp').html(hp.result);
+    currentHP = hp.result;
+    $('#hp').html(currentHP);
 
     outputSingleDiceRoll("Rolling HP", hp);
 
@@ -114,10 +244,11 @@ function displayMonster()
         if (monster.abilities[ability].modifier >= 0) {
             plus = '+'
         }
-        $('.modifier', abilityNode).html(plus + monster.abilities[ability].modifier);
+        var diceText = '1d20' + plus + monster.abilities[ability].modifier;
+        $('.modifier', abilityNode).html(createSingleRollLink(ability, plus + monster.abilities[ability].modifier, diceText));
     }
 
-    // saving, skill throws and senses
+    // saving, skill throws
     var saving = simpleListWithData(monster.savingThrows, true);
     if (saving === false) {
         $('#saving').remove();
@@ -130,6 +261,8 @@ function displayMonster()
     } else {
         $('#skills').html('<strong>Skills</strong> ' + skills);
     }
+
+    // senses
     var senses = simpleListWithData(monster.senses, false);
     if (senses === false) {
         $('#senses').remove();
@@ -184,7 +317,15 @@ function displayMonster()
 
     // Actions
     for (var i = 0; i < monster.actions.length; i++) {
-        $('#actions').append('<p><strong>' + toTitleCase(monster.actions[i].name) + '</strong> ' + monster.actions[i].description + '</p>');
+        var html = '<p><strong>';
+        if (monster.actions[i].hasOwnProperty('tohit')) {
+            html += createActionRollLink(toTitleCase(monster.actions[i].name), i);
+        } else {
+            html += toTitleCase(monster.actions[i].name);
+        }
+        html += '</strong> ' + processTextForRolls(monster.actions[i].description) + '</p>'
+
+        $('#actions').append(html);
     }
 
     // Legendary Actions
@@ -193,7 +334,7 @@ function displayMonster()
     } else {
         $('#legendary').append('<p>' + monster.legendary.intro + '</p>');
         for (var i = 0; i < monster.legendary.actions.length; i++) {
-            $('#legendary').append('<p><strong>' + toTitleCase(monster.legendary.actions[i].name) + '</strong> ' + monster.legendary.actions[i].description + '</p>');
+            $('#legendary').append('<p><strong>' + toTitleCase(monster.legendary.actions[i].name) + '</strong> ' + processTextForRolls(monster.legendary.actions[i].description) + '</p>');
         }
     }
 }
@@ -203,10 +344,18 @@ function simpleListWithData(list, throws) {
     if (isSimpleObject(list)) {
         for (key in list) {
             var entry = capitalise(key) + ' ';
+            var diceText = '1d20';
             if (throws && list[key] >= 0) {
                 entry += '+';
+                diceText += '+';
             }
             entry += list[key];
+            diceText += list[key];
+
+            if (throws) {
+                entry = createSingleRollLink(capitalise(key), entry, diceText);
+            }
+
             output[output.length] = entry;
         }
         return output.join(', ');
@@ -235,6 +384,17 @@ function groupedListWithCondition(list) {
 
 function simpleList(list) {
     return list.join(', ');
+}
+
+function processTextForRolls(text)
+{
+    returnText = '';
+
+    var regex = /(\d+[dD]\d+(\s?[\-+]\s?\d+)?)/g;
+
+    returnText = text.replaceAll(regex, '<a href="javascript:singleDiceRoll(\'\', \'$1\')">$1</a>');
+
+    return returnText;
 }
 
 function getSlug()

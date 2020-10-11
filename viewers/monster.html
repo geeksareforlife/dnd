@@ -12,6 +12,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/27cb6b525f.js" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="../common/jquery-ui/jquery-ui.js"></script>
+
     <script type="text/javascript" src="monster.js"></script>
     <script type="text/javascript" src="../common/diceroller.js"></script>
 </head>
@@ -19,9 +21,26 @@
 <div class="container mt-3 py-2">
 <div class="row">
 <div class="col-md-9">
-    <h2 id="name"></h2>
-    <p id="type" class="small"></p>
-    <p id="speeds" class="pb-1 border-bottom"></p>
+    <div class="row border-bottom">
+        <div class="col-md-10">
+            <h2 id="name"></h2>
+            <p id="type" class="small"></p>
+            <p id="speeds" class="pb-1"></p>
+        </div>
+        <div class="col-md-2">
+            <form id="hp-form">
+                <div class="input-group mt-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-danger" type="button" id="hp-reduce">-</button>
+                    </div>
+                    <input type="text" class="form-control" id="hp-change" placeholder="HP">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" id="hp-increase">+</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="row border-bottom mb-2">
         <div class="col-md-2 ability" id="str">
             <p class="score mb-0"></p>
