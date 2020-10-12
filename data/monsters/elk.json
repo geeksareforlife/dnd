@@ -1,0 +1,111 @@
+{
+    "name": "Elk",
+    "source": "BR",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 16,
+            "modifier": 3
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 10,
+            "modifier": 0
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 12,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": "\u22124"
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 10,
+            "modifier": 0
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 6,
+            "modifier": "\u22122"
+        }
+    },
+    "ac": {
+        "value": 10,
+        "info": null
+    },
+    "hp": {
+        "hit points": 13,
+        "hit dice": "2d10 + 2"
+    },
+    "speeds": {
+        "core": {
+            "walk": "50 ft."
+        },
+        "forms": []
+    },
+    "savingThrows": [],
+    "skillThrows": [],
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": {
+        "passive Perception": 10
+    },
+    "languages": "-",
+    "challenge": {
+        "rating": "1\/4",
+        "xp": "50 XP"
+    },
+    "traits": [
+        {
+            "name": "charge.",
+            "description": "If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "ram.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 6,
+                        "dice": "1d6 + 3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "hooves.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one prone creature. Hit: 8 (2d4 + 3) bludgeoning damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 8,
+                        "dice": "2d4 + 3"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

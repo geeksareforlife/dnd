@@ -1,5 +1,5 @@
 {
-    "name": "Reef Shark",
+    "name": "Giant Poisonous Snake",
     "source": "BR",
     "size": "medium",
     "type": "beast",
@@ -8,13 +8,13 @@
     "abilities": {
         "STR": {
             "name": "Strength",
-            "score": 14,
-            "modifier": 2
+            "score": 10,
+            "modifier": 0
         },
         "DEX": {
             "name": "Dexterity",
-            "score": 13,
-            "modifier": 1
+            "score": 18,
+            "modifier": 4
         },
         "CON": {
             "name": "Constitution",
@@ -23,8 +23,8 @@
         },
         "INT": {
             "name": "Intelligence",
-            "score": 1,
-            "modifier": "\u22125"
+            "score": 2,
+            "modifier": "\u22124"
         },
         "WIS": {
             "name": "Wisdom",
@@ -33,22 +33,22 @@
         },
         "CHA": {
             "name": "Charisma",
-            "score": 4,
-            "modifier": "\u22123"
+            "score": 3,
+            "modifier": "\u22124"
         }
     },
     "ac": {
-        "value": 12,
-        "info": "natural armor"
+        "value": 14,
+        "info": null
     },
     "hp": {
-        "hit points": 22,
-        "hit dice": "4d8 + 4"
+        "hit points": 11,
+        "hit dice": "2d8 + 2"
     },
     "speeds": {
         "core": {
-            "walk": "0 ft.",
-            "swim": "40 ft."
+            "walk": "30 ft.",
+            "swim": "30 ft."
         },
         "forms": []
     },
@@ -61,38 +61,27 @@
     "damageImmunities": [],
     "conditionImmunities": [],
     "senses": {
-        "blindsight": "30 ft.",
+        "blindsight": "10 ft.",
         "passive Perception": 12
     },
     "languages": "-",
     "challenge": {
-        "rating": "1\/2",
-        "xp": "100 XP"
+        "rating": "1\/4",
+        "xp": "50 XP"
     },
-    "traits": [
-        {
-            "name": "pack tactics.",
-            "description": "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.",
-            "extra": []
-        },
-        {
-            "name": "water breathing.",
-            "description": "The shark can breathe only underwater.",
-            "extra": []
-        }
-    ],
+    "traits": [],
     "actions": [
         {
             "name": "bite.",
-            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "description": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
             "extra": [],
-            "tohit": "1d20+4",
+            "tohit": "1d20+6",
             "damages": {
                 "or": [
                     {
                         "type": "piercing",
                         "average": 6,
-                        "dice": "1d8 + 2"
+                        "dice": "1d4 + 4"
                     }
                 ]
             }

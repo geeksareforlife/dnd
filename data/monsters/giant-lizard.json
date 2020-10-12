@@ -1,19 +1,19 @@
 {
-    "name": "Reef Shark",
+    "name": "Giant Lizard",
     "source": "BR",
-    "size": "medium",
+    "size": "large",
     "type": "beast",
     "tags": [],
     "alignment": "unaligned",
     "abilities": {
         "STR": {
             "name": "Strength",
-            "score": 14,
+            "score": 15,
             "modifier": 2
         },
         "DEX": {
             "name": "Dexterity",
-            "score": 13,
+            "score": 12,
             "modifier": 1
         },
         "CON": {
@@ -23,8 +23,8 @@
         },
         "INT": {
             "name": "Intelligence",
-            "score": 1,
-            "modifier": "\u22125"
+            "score": 2,
+            "modifier": "\u22124"
         },
         "WIS": {
             "name": "Wisdom",
@@ -33,7 +33,7 @@
         },
         "CHA": {
             "name": "Charisma",
-            "score": 4,
+            "score": 5,
             "modifier": "\u22123"
         }
     },
@@ -42,45 +42,32 @@
         "info": "natural armor"
     },
     "hp": {
-        "hit points": 22,
-        "hit dice": "4d8 + 4"
+        "hit points": 19,
+        "hit dice": "3d10 + 3"
     },
     "speeds": {
         "core": {
-            "walk": "0 ft.",
-            "swim": "40 ft."
+            "walk": "30 ft.",
+            "climb": "30 ft."
         },
         "forms": []
     },
     "savingThrows": [],
-    "skillThrows": {
-        "perception": 2
-    },
+    "skillThrows": [],
     "damageVulnerabilities": [],
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
     "senses": {
-        "blindsight": "30 ft.",
-        "passive Perception": 12
+        "darkvision": "30 ft.",
+        "passive Perception": 10
     },
     "languages": "-",
     "challenge": {
-        "rating": "1\/2",
-        "xp": "100 XP"
+        "rating": "1\/4",
+        "xp": "50 XP"
     },
-    "traits": [
-        {
-            "name": "pack tactics.",
-            "description": "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.",
-            "extra": []
-        },
-        {
-            "name": "water breathing.",
-            "description": "The shark can breathe only underwater.",
-            "extra": []
-        }
-    ],
+    "traits": [],
     "actions": [
         {
             "name": "bite.",

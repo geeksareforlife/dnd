@@ -80,6 +80,7 @@ function showForm($message = '', $type = 'success')
   <div class="form-group">
     <label for="sourcebook">Sourcebook</label>
     <select class="form-control" id="sourcebook" name="sourcebook">
+        <option value="BR">Basic Rules</option>
         <option value="PHB">Player's Handbook</option>
         <option value="MM">Monster Manual</option>
     </select>

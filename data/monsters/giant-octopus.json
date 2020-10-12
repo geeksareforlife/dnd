@@ -1,0 +1,116 @@
+{
+    "name": "Giant Octopus",
+    "source": "BR",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 17,
+            "modifier": 3
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 13,
+            "modifier": 1
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 13,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 4,
+            "modifier": "\u22123"
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 10,
+            "modifier": 0
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 4,
+            "modifier": "\u22123"
+        }
+    },
+    "ac": {
+        "value": 11,
+        "info": null
+    },
+    "hp": {
+        "hit points": 52,
+        "hit dice": "8d10 + 8"
+    },
+    "speeds": {
+        "core": {
+            "walk": "10 ft.",
+            "swim": "60 ft."
+        },
+        "forms": []
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 4,
+        "stealth": 5
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": {
+        "darkvision": "60 ft.",
+        "passive Perception": 14
+    },
+    "languages": "-",
+    "challenge": {
+        "rating": 1,
+        "xp": "200 XP"
+    },
+    "traits": [
+        {
+            "name": "hold breath.",
+            "description": "While out of water, the octopus can hold its breath for 1 hour.",
+            "extra": []
+        },
+        {
+            "name": "underwater camouflage.",
+            "description": "The octopus has advantage on Dexterity (Stealth) checks made while underwater.",
+            "extra": []
+        },
+        {
+            "name": "water breathing.",
+            "description": "The octopus can breathe only underwater.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "tentacles.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 10,
+                        "dice": "2d6 + 3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "ink cloud (recharges after a short or long rest).",
+            "description": "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.",
+            "extra": []
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

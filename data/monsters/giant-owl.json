@@ -1,0 +1,106 @@
+{
+    "name": "Giant Owl",
+    "source": "BR",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "neutral",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 13,
+            "modifier": 1
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 15,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 12,
+            "modifier": 1
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 8,
+            "modifier": "\u22121"
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 13,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 10,
+            "modifier": 0
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": null
+    },
+    "hp": {
+        "hit points": 19,
+        "hit dice": "3d10 + 3"
+    },
+    "speeds": {
+        "core": {
+            "walk": "5 ft.",
+            "fly": "60 ft."
+        },
+        "forms": []
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 5,
+        "stealth": 4
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": {
+        "darkvision": "120 ft.",
+        "passive Perception": 15
+    },
+    "languages": "Giant Owl, understands Common, Elvish, and Sylvan but can't speak them",
+    "challenge": {
+        "rating": "1\/4",
+        "xp": "50 XP"
+    },
+    "traits": [
+        {
+            "name": "flyby.",
+            "description": "The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+            "extra": []
+        },
+        {
+            "name": "keen hearing and sight.",
+            "description": "The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "talons.",
+            "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) slashing damage.",
+            "extra": [],
+            "tohit": "1d20+3",
+            "damages": {
+                "or": [
+                    {
+                        "type": "slashing",
+                        "average": 8,
+                        "dice": "2d6 + 1"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

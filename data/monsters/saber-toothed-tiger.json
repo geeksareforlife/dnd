@@ -1,0 +1,119 @@
+{
+    "name": "Saber-Toothed Tiger",
+    "source": "BR",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 18,
+            "modifier": 4
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 14,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 15,
+            "modifier": 2
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 3,
+            "modifier": "\u22124"
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 12,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 8,
+            "modifier": "\u22121"
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": null
+    },
+    "hp": {
+        "hit points": 52,
+        "hit dice": "7d10 + 14"
+    },
+    "speeds": {
+        "core": {
+            "walk": "40 ft."
+        },
+        "forms": []
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 3,
+        "stealth": 6
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": {
+        "passive Perception": 13
+    },
+    "languages": "-",
+    "challenge": {
+        "rating": 2,
+        "xp": "450 XP"
+    },
+    "traits": [
+        {
+            "name": "keen smell.",
+            "description": "The tiger has advantage on Wisdom (Perception) checks that rely on smell.",
+            "extra": []
+        },
+        {
+            "name": "pounce.",
+            "description": "If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+6",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 10,
+                        "dice": "1d10 + 5"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "claw.",
+            "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+            "extra": [],
+            "tohit": "1d20+6",
+            "damages": {
+                "or": [
+                    {
+                        "type": "slashing",
+                        "average": 12,
+                        "dice": "2d6 + 5"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}
