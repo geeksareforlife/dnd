@@ -1,0 +1,111 @@
+{
+    "name": "Giant Frog",
+    "source": "BR",
+    "size": "medium",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 12,
+            "modifier": 1
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 13,
+            "modifier": 1
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 11,
+            "modifier": 0
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": "\u22124"
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 10,
+            "modifier": 0
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 3,
+            "modifier": "\u22124"
+        }
+    },
+    "ac": {
+        "value": 11,
+        "info": null
+    },
+    "hp": {
+        "hit points": 18,
+        "hit dice": "4d8"
+    },
+    "speeds": {
+        "core": {
+            "walk": "30 ft.",
+            "swim": "30 ft."
+        },
+        "forms": []
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 2,
+        "stealth": 3
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": {
+        "darkvision": "30 ft.",
+        "passive Perception": 12
+    },
+    "languages": "-",
+    "challenge": {
+        "rating": "1\/4",
+        "xp": "50 XP"
+    },
+    "traits": [
+        {
+            "name": "amphibious.",
+            "description": "The frog can breathe air and water.",
+            "extra": []
+        },
+        {
+            "name": "standing leap.",
+            "description": "The frog's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage, and the target is grappled (escape DC 11). Until this grapple ends, the target is restrained, and the frog can't bite another target.",
+            "extra": [],
+            "tohit": "1d20+3",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 4,
+                        "dice": "1d6 + 1"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "swallow.",
+            "description": "The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the frog, and it takes 5 (2d4) acid damage at the start of each of the frog's turns. The frog can have only one target swallowed at a time.",
+            "extra": []
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

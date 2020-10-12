@@ -1,0 +1,114 @@
+{
+    "name": "Ape",
+    "source": "BR",
+    "size": "medium",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 16,
+            "modifier": 3
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 14,
+            "modifier": 2
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 14,
+            "modifier": 2
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 6,
+            "modifier": "\u22122"
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 12,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 7,
+            "modifier": "\u22122"
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": null
+    },
+    "hp": {
+        "hit points": 19,
+        "hit dice": "3d8 + 6"
+    },
+    "speeds": {
+        "core": {
+            "walk": "30 ft.",
+            "climb": "30 ft."
+        },
+        "forms": []
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "athletics": 5,
+        "perception": 3
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": {
+        "passive Perception": 13
+    },
+    "languages": "-",
+    "challenge": {
+        "rating": "1\/2",
+        "xp": "100 XP"
+    },
+    "traits": [],
+    "actions": [
+        {
+            "name": "multiattack.",
+            "description": "The ape makes two fist attacks.",
+            "extra": []
+        },
+        {
+            "name": "fist.",
+            "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 6,
+                        "dice": "1d6 + 3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "rock.",
+            "description": "Ranged Weapon Attack: +5 to hit, range 25\/50 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
+            "extra": [],
+            "tohit": "1d20+5",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 6,
+                        "dice": "1d6 + 3"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

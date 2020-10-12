@@ -1,0 +1,119 @@
+{
+    "name": "Polar Bear",
+    "source": "BR",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 20,
+            "modifier": 5
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 10,
+            "modifier": 0
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 16,
+            "modifier": 3
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": "\u22124"
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 13,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 7,
+            "modifier": "\u22122"
+        }
+    },
+    "ac": {
+        "value": 12,
+        "info": "natural armor"
+    },
+    "hp": {
+        "hit points": 42,
+        "hit dice": "5d10 + 15"
+    },
+    "speeds": {
+        "core": {
+            "walk": "40 ft.",
+            "swim": "30 ft."
+        },
+        "forms": []
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 3
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": {
+        "passive Perception": 13
+    },
+    "languages": "-",
+    "challenge": {
+        "rating": 2,
+        "xp": "450 XP"
+    },
+    "traits": [
+        {
+            "name": "keen smell.",
+            "description": "The bear has advantage on Wisdom (Perception) checks that rely on smell.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "multiattack.",
+            "description": "The bear makes two attacks: one with its bite and one with its claws.",
+            "extra": []
+        },
+        {
+            "name": "bite.",
+            "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage.",
+            "extra": [],
+            "tohit": "1d20+7",
+            "damages": {
+                "or": [
+                    {
+                        "type": "piercing",
+                        "average": 9,
+                        "dice": "1d8 + 5"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "claws.",
+            "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+            "extra": [],
+            "tohit": "1d20+7",
+            "damages": {
+                "or": [
+                    {
+                        "type": "slashing",
+                        "average": 12,
+                        "dice": "2d6 + 5"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

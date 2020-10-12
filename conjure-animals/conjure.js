@@ -24,7 +24,7 @@ var monstersByEnvAndCR = {
         2: ['Cave Bear', 'Giant Boar', 'Giant Constrictor Snake', 'Giant Elk']
     },
     'grassland': {
-        0.25: ['Axe Beak', 'Boar', 'Elk', 'Giant Badger', 'Giant Lizard', 'Giant Owl', 'Giant Poisonous Snake', 'Giant Wolf Spider', 'Panther', 'Riding/Draft Horse*', 'Wolf'],
+        0.25: ['Axe Beak', 'Boar', 'Elk', 'Giant Badger', 'Giant Lizard', 'Giant Owl', 'Giant Poisonous Snake', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf'],
         0.5: ['Black Bear', 'Giant Goat', 'Giant Wasp', 'Warhorse'],
         1: ['Brown Bear', 'Dire Wolf', 'Giant Eagle', 'Giant Hyena', 'Giant Vulture', 'Lion'],
         2: ['Giant Boar', 'Giant Elk', 'Rhinoceros']
@@ -37,14 +37,14 @@ var monstersByEnvAndCR = {
     },
     'swamp': {
         0.25: ['Constrictor Snake', 'Giant Bat', 'Giant Centipede', 'Giant Frog', 'Giant Lizard', 'Giant Poisonous Snake'],
-        0.5: ['Crocodile', 'Giant Wasp/Dragonfly', 'Giant Vulture'],
+        0.5: ['Crocodile', 'Giant Dragonfly', 'Giant Vulture'],
         1: ['Giant Spider', 'Giant Toad'],
         2: ['Giant Constrictor Snake']
     },
     'underdark': {
-        0.25: ['Giant Bat', 'Giant Centipede', 'Giant Frog', 'Giant Lizard', 'Giant Wolf Spider', 'Male Steeder'],
+        0.25: ['Giant Bat', 'Giant Centipede', 'Giant Frog', 'Giant Lizard', 'Giant Wolf Spider'],
         0.5: [],
-        1: ['Female Steeder', 'Giant Spider', 'Giant Toad'],
+        1: ['Giant Spider', 'Giant Toad'],
         2: ['Cave Bear', 'Giant Constrictor Snake']
     },
     'underwater': {
@@ -67,7 +67,7 @@ var monstersByEnvAndCR = {
     },
     'prehistoric': {
         0.25: ['Axe Beak', 'Giant Bat', 'Giant Centipede', 'Giant Frog', 'Giant Lizard', 'Giant Poisonous Snake', 'Giant Wolf Spider'],
-        0.5: ['Crocodile', 'Giant Wasp (Meganeura)'],
+        0.5: ['Crocodile', 'Meganeura'],
         1: ['Dire Wolf', 'Giant Eagle', 'Giant Hyena', 'Giant Octopus', 'Giant Spider', 'Giant Toad'],
         2: ['Cave Bear', 'Giant Constrictor Snake', 'Giant Elk', 'Hunter Shark', 'Rhinoceros', 'Saber-Toothed Tiger']
     },
@@ -181,10 +181,60 @@ function display(monsters)
     var output = "<p>Wild animals appear!</p>";
 
     for (monster in monsterCount) {
-        output += '<p>' + monsterCount[monster] + ' x <a target="_blank" href="' + allMonsters[monster] + '">' + monster + '</a></p>';
+        //output += '<p>' + monsterCount[monster] + ' x <a target="_blank" href="' + allMonsters[monster] + '">' + monster + '</a></p>';
+        output += '<p>' + monsterCount[monster] + ' x ' + monster;
+        if (monsterCount[monster] > 1) {
+            output += ', give them names:</p>';
+        } else {
+            output += ', give it a name:</p>';
+        }
+        for (var i = 0; i < monsterCount[monster]; i++) {
+            output += '<div class="form-group row">'
+            output += '<label for="' + monster + i + '" class="col-sm-2 col-form-label">' + monster + ' ' + (i+1) + '</label>';
+            output += '<div class="col-sm-10">'
+            output += '<input type="text" class="form-control monster-name" id="' + monster + i + '" data-monster="' + monster + '">';
+            output += '</div></div>';
+        }
     }
 
+    output += '<a tabindex="0" class="btn btn-primary mb-1" id="getmessage" data-toggle="popover" data-trigger="manual" data-content="Copied!">Get Messages</a>';
+
+    output += '<textarea id="monster-out" class="form-control"></textarea>';
+
     $('#output').html("").html(output);
+    $('#getmessage').click(getMessage).popover();
+}
+
+function getMessage()
+{
+    // get monster types and names
+    var monsters = [];
+
+    $('.monster-name').each(function() {
+        monsters[monsters.length] = {
+            'type': $(this).attr('data-monster'),
+            'name': $(this).val()
+        }
+    });
+
+    message = '';
+
+    for (var i = 0; i < monsters.length; i++) {
+        message += allMonsters[monsters[i].type];
+        if (monsters[i].name != '') {
+            message += '&name=' + monsters[i].name;
+        }
+        message += "\n";
+    }
+
+    $('#monster-out').val(message);
+    $('#monster-out').select();
+    document.execCommand('copy');
+
+    $('#getmessage').popover('show');
+    setTimeout(function() {
+        $('#getmessage').popover('hide');
+    }, 1500)
 }
 
 function getMonster(environments, cr, lower)

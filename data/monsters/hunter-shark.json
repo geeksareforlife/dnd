@@ -1,15 +1,15 @@
 {
-    "name": "Reef Shark",
+    "name": "Hunter Shark",
     "source": "BR",
-    "size": "medium",
+    "size": "large",
     "type": "beast",
     "tags": [],
     "alignment": "unaligned",
     "abilities": {
         "STR": {
             "name": "Strength",
-            "score": 14,
-            "modifier": 2
+            "score": 18,
+            "modifier": 4
         },
         "DEX": {
             "name": "Dexterity",
@@ -18,8 +18,8 @@
         },
         "CON": {
             "name": "Constitution",
-            "score": 13,
-            "modifier": 1
+            "score": 15,
+            "modifier": 2
         },
         "INT": {
             "name": "Intelligence",
@@ -42,8 +42,8 @@
         "info": "natural armor"
     },
     "hp": {
-        "hit points": 22,
-        "hit dice": "4d8 + 4"
+        "hit points": 45,
+        "hit dice": "6d10 + 12"
     },
     "speeds": {
         "core": {
@@ -66,13 +66,13 @@
     },
     "languages": "-",
     "challenge": {
-        "rating": "1\/2",
-        "xp": "100 XP"
+        "rating": 2,
+        "xp": "450 XP"
     },
     "traits": [
         {
-            "name": "pack tactics.",
-            "description": "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+            "name": "blood frenzy.",
+            "description": "The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
             "extra": []
         },
         {
@@ -84,15 +84,15 @@
     "actions": [
         {
             "name": "bite.",
-            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.",
             "extra": [],
-            "tohit": "1d20+4",
+            "tohit": "1d20+6",
             "damages": {
                 "or": [
                     {
                         "type": "piercing",
-                        "average": 6,
-                        "dice": "1d8 + 2"
+                        "average": 13,
+                        "dice": "2d8 + 4"
                     }
                 ]
             }

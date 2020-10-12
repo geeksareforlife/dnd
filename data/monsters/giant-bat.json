@@ -1,98 +1,96 @@
 {
-    "name": "Reef Shark",
+    "name": "Giant Bat",
     "source": "BR",
-    "size": "medium",
+    "size": "large",
     "type": "beast",
     "tags": [],
     "alignment": "unaligned",
     "abilities": {
         "STR": {
             "name": "Strength",
-            "score": 14,
+            "score": 15,
             "modifier": 2
         },
         "DEX": {
             "name": "Dexterity",
-            "score": 13,
-            "modifier": 1
+            "score": 16,
+            "modifier": 3
         },
         "CON": {
             "name": "Constitution",
-            "score": 13,
-            "modifier": 1
+            "score": 11,
+            "modifier": 0
         },
         "INT": {
             "name": "Intelligence",
-            "score": 1,
-            "modifier": "\u22125"
+            "score": 2,
+            "modifier": "\u22124"
         },
         "WIS": {
             "name": "Wisdom",
-            "score": 10,
-            "modifier": 0
+            "score": 12,
+            "modifier": 1
         },
         "CHA": {
             "name": "Charisma",
-            "score": 4,
-            "modifier": "\u22123"
+            "score": 6,
+            "modifier": "\u22122"
         }
     },
     "ac": {
-        "value": 12,
-        "info": "natural armor"
+        "value": 13,
+        "info": null
     },
     "hp": {
         "hit points": 22,
-        "hit dice": "4d8 + 4"
+        "hit dice": "4d10"
     },
     "speeds": {
         "core": {
-            "walk": "0 ft.",
-            "swim": "40 ft."
+            "walk": "10 ft.",
+            "fly": "60 ft."
         },
         "forms": []
     },
     "savingThrows": [],
-    "skillThrows": {
-        "perception": 2
-    },
+    "skillThrows": [],
     "damageVulnerabilities": [],
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
     "senses": {
-        "blindsight": "30 ft.",
-        "passive Perception": 12
+        "blindsight": "60 ft.",
+        "passive Perception": 11
     },
     "languages": "-",
     "challenge": {
-        "rating": "1\/2",
-        "xp": "100 XP"
+        "rating": "1\/4",
+        "xp": "50 XP"
     },
     "traits": [
         {
-            "name": "pack tactics.",
-            "description": "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+            "name": "echolocation.",
+            "description": "The bat can't use its blindsight while deafened.",
             "extra": []
         },
         {
-            "name": "water breathing.",
-            "description": "The shark can breathe only underwater.",
+            "name": "keen hearing.",
+            "description": "The bat has advantage on Wisdom (Perception) checks that rely on hearing.",
             "extra": []
         }
     ],
     "actions": [
         {
             "name": "bite.",
-            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
             "extra": [],
             "tohit": "1d20+4",
             "damages": {
                 "or": [
                     {
                         "type": "piercing",
-                        "average": 6,
-                        "dice": "1d8 + 2"
+                        "average": 5,
+                        "dice": "1d6 + 2"
                     }
                 ]
             }

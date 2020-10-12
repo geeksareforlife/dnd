@@ -1,0 +1,113 @@
+{
+    "name": "Giant Elk",
+    "source": "BR",
+    "size": "huge",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 19,
+            "modifier": 4
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 16,
+            "modifier": 3
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 14,
+            "modifier": 2
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 7,
+            "modifier": "\u22122"
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 14,
+            "modifier": 2
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 10,
+            "modifier": 0
+        }
+    },
+    "ac": {
+        "value": 14,
+        "info": "natural armor"
+    },
+    "hp": {
+        "hit points": 42,
+        "hit dice": "5d12 + 10"
+    },
+    "speeds": {
+        "core": {
+            "walk": "60 ft."
+        },
+        "forms": []
+    },
+    "savingThrows": [],
+    "skillThrows": {
+        "perception": 4
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": {
+        "passive Perception": 14
+    },
+    "languages": "Giant Elk, understands Common, Elvish, and Sylvan but can't speak them",
+    "challenge": {
+        "rating": 2,
+        "xp": "450 XP"
+    },
+    "traits": [
+        {
+            "name": "charge.",
+            "description": "If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "ram.",
+            "description": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
+            "extra": [],
+            "tohit": "1d20+6",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 11,
+                        "dice": "2d6 + 4"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "hooves.",
+            "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one prone creature. Hit: 22 (4d8 + 4) bludgeoning damage.",
+            "extra": [],
+            "tohit": "1d20+6",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 22,
+                        "dice": "4d8 + 4"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}

@@ -1,49 +1,49 @@
 {
-    "name": "Reef Shark",
+    "name": "Giant Sea Horse",
     "source": "BR",
-    "size": "medium",
+    "size": "large",
     "type": "beast",
     "tags": [],
     "alignment": "unaligned",
     "abilities": {
         "STR": {
             "name": "Strength",
-            "score": 14,
-            "modifier": 2
+            "score": 12,
+            "modifier": 1
         },
         "DEX": {
             "name": "Dexterity",
-            "score": 13,
-            "modifier": 1
+            "score": 15,
+            "modifier": 2
         },
         "CON": {
             "name": "Constitution",
-            "score": 13,
-            "modifier": 1
+            "score": 11,
+            "modifier": 0
         },
         "INT": {
             "name": "Intelligence",
-            "score": 1,
-            "modifier": "\u22125"
+            "score": 2,
+            "modifier": "\u22124"
         },
         "WIS": {
             "name": "Wisdom",
-            "score": 10,
-            "modifier": 0
+            "score": 12,
+            "modifier": 1
         },
         "CHA": {
             "name": "Charisma",
-            "score": 4,
+            "score": 5,
             "modifier": "\u22123"
         }
     },
     "ac": {
-        "value": 12,
+        "value": 13,
         "info": "natural armor"
     },
     "hp": {
-        "hit points": 22,
-        "hit dice": "4d8 + 4"
+        "hit points": 16,
+        "hit dice": "3d10"
     },
     "speeds": {
         "core": {
@@ -53,16 +53,13 @@
         "forms": []
     },
     "savingThrows": [],
-    "skillThrows": {
-        "perception": 2
-    },
+    "skillThrows": [],
     "damageVulnerabilities": [],
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
     "senses": {
-        "blindsight": "30 ft.",
-        "passive Perception": 12
+        "passive Perception": 11
     },
     "languages": "-",
     "challenge": {
@@ -71,28 +68,28 @@
     },
     "traits": [
         {
-            "name": "pack tactics.",
-            "description": "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+            "name": "charge.",
+            "description": "If the sea horse moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. It the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
             "extra": []
         },
         {
             "name": "water breathing.",
-            "description": "The shark can breathe only underwater.",
+            "description": "The sea horse can breathe only underwater.",
             "extra": []
         }
     ],
     "actions": [
         {
-            "name": "bite.",
-            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "name": "ram.",
+            "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
             "extra": [],
-            "tohit": "1d20+4",
+            "tohit": "1d20+3",
             "damages": {
                 "or": [
                     {
-                        "type": "piercing",
-                        "average": 6,
-                        "dice": "1d8 + 2"
+                        "type": "bludgeoning",
+                        "average": 4,
+                        "dice": "1d6 + 1"
                     }
                 ]
             }

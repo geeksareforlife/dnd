@@ -1,24 +1,24 @@
 {
-    "name": "Reef Shark",
+    "name": "Giant Centipede",
     "source": "BR",
-    "size": "medium",
+    "size": "small",
     "type": "beast",
     "tags": [],
     "alignment": "unaligned",
     "abilities": {
         "STR": {
             "name": "Strength",
-            "score": 14,
-            "modifier": 2
+            "score": 5,
+            "modifier": "\u22123"
         },
         "DEX": {
             "name": "Dexterity",
-            "score": 13,
-            "modifier": 1
+            "score": 14,
+            "modifier": 2
         },
         "CON": {
             "name": "Constitution",
-            "score": 13,
+            "score": 12,
             "modifier": 1
         },
         "INT": {
@@ -28,71 +28,58 @@
         },
         "WIS": {
             "name": "Wisdom",
-            "score": 10,
-            "modifier": 0
+            "score": 7,
+            "modifier": "\u22122"
         },
         "CHA": {
             "name": "Charisma",
-            "score": 4,
-            "modifier": "\u22123"
+            "score": 3,
+            "modifier": "\u22124"
         }
     },
     "ac": {
-        "value": 12,
+        "value": 13,
         "info": "natural armor"
     },
     "hp": {
-        "hit points": 22,
-        "hit dice": "4d8 + 4"
+        "hit points": 4,
+        "hit dice": "1d6 + 1"
     },
     "speeds": {
         "core": {
-            "walk": "0 ft.",
-            "swim": "40 ft."
+            "walk": "30 ft.",
+            "climb": "30 ft."
         },
         "forms": []
     },
     "savingThrows": [],
-    "skillThrows": {
-        "perception": 2
-    },
+    "skillThrows": [],
     "damageVulnerabilities": [],
     "damageResistances": [],
     "damageImmunities": [],
     "conditionImmunities": [],
     "senses": {
         "blindsight": "30 ft.",
-        "passive Perception": 12
+        "passive Perception": 8
     },
     "languages": "-",
     "challenge": {
-        "rating": "1\/2",
-        "xp": "100 XP"
+        "rating": "1\/4",
+        "xp": "50 XP"
     },
-    "traits": [
-        {
-            "name": "pack tactics.",
-            "description": "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.",
-            "extra": []
-        },
-        {
-            "name": "water breathing.",
-            "description": "The shark can breathe only underwater.",
-            "extra": []
-        }
-    ],
+    "traits": [],
     "actions": [
         {
             "name": "bite.",
-            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
             "extra": [],
             "tohit": "1d20+4",
             "damages": {
                 "or": [
                     {
                         "type": "piercing",
-                        "average": 6,
-                        "dice": "1d8 + 2"
+                        "average": 4,
+                        "dice": "1d4 + 2"
                     }
                 ]
             }

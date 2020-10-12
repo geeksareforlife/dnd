@@ -1,0 +1,96 @@
+{
+    "name": "Rhinoceros",
+    "source": "BR",
+    "size": "large",
+    "type": "beast",
+    "tags": [],
+    "alignment": "unaligned",
+    "abilities": {
+        "STR": {
+            "name": "Strength",
+            "score": 21,
+            "modifier": 5
+        },
+        "DEX": {
+            "name": "Dexterity",
+            "score": 8,
+            "modifier": "\u22121"
+        },
+        "CON": {
+            "name": "Constitution",
+            "score": 15,
+            "modifier": 2
+        },
+        "INT": {
+            "name": "Intelligence",
+            "score": 2,
+            "modifier": "\u22124"
+        },
+        "WIS": {
+            "name": "Wisdom",
+            "score": 12,
+            "modifier": 1
+        },
+        "CHA": {
+            "name": "Charisma",
+            "score": 6,
+            "modifier": "\u22122"
+        }
+    },
+    "ac": {
+        "value": 11,
+        "info": "natural armor"
+    },
+    "hp": {
+        "hit points": 45,
+        "hit dice": "6d10 + 12"
+    },
+    "speeds": {
+        "core": {
+            "walk": "40 ft."
+        },
+        "forms": []
+    },
+    "savingThrows": [],
+    "skillThrows": [],
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": {
+        "passive Perception": 11
+    },
+    "languages": "-",
+    "challenge": {
+        "rating": 2,
+        "xp": "450 XP"
+    },
+    "traits": [
+        {
+            "name": "charge.",
+            "description": "If the rhinoceros moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.",
+            "extra": []
+        }
+    ],
+    "actions": [
+        {
+            "name": "gore.",
+            "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
+            "extra": [],
+            "tohit": "1d20+7",
+            "damages": {
+                "or": [
+                    {
+                        "type": "bludgeoning",
+                        "average": 14,
+                        "dice": "2d8 + 5"
+                    }
+                ]
+            }
+        }
+    ],
+    "legendary": {
+        "intro": "",
+        "actions": []
+    }
+}
