@@ -1,0 +1,21 @@
+{
+    "id": "crystal",
+    "name": "Crystal",
+    "description": [],
+    "weight": "1 lb",
+    "category": "Adventuring Gear",
+    "subcategory": "Arcane Focus",
+    "cost": {
+        "normal": 1000,
+        "cheap": 700,
+        "expensive": 1500
+    },
+    "stores": [],
+    "themes": {
+        "magical": [
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/crystal"
+}

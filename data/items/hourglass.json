@@ -1,0 +1,22 @@
+{
+    "id": "hourglass",
+    "name": "Hourglass",
+    "description": [
+        "A standard hourglass used to measure the passage of time."
+    ],
+    "weight": "1 lb",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 2500,
+        "cheap": 1800,
+        "expensive": 3800
+    },
+    "stores": {
+        "adventuring supplies": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/hourglass"
+}

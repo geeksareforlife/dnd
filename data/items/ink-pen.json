@@ -1,0 +1,27 @@
+{
+    "id": "ink-pen",
+    "name": "Ink Pen",
+    "description": [
+        "An ink pen is a wooden stick with a special tip on the end. The tip draws ink in when dipped in a vial and leaves an ink trail when drawn across a surface."
+    ],
+    "weight": " -- ",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 300,
+        "cheap": 200,
+        "expensive": 500
+    },
+    "stores": {
+        "general": [
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/ink-pen"
+}

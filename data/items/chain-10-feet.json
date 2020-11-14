@@ -1,0 +1,23 @@
+{
+    "id": "chain-10-feet",
+    "name": "Chain (10 feet)",
+    "description": [
+        "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check."
+    ],
+    "weight": 10,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/chain-10-feet"
+}

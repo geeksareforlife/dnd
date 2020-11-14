@@ -1,0 +1,25 @@
+{
+    "id": "quiver",
+    "name": "Quiver",
+    "description": [
+        "A quiver can hold up to 20 arrows."
+    ],
+    "weight": "1 lb",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": {
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/quiver"
+}

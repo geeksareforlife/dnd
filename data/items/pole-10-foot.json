@@ -1,0 +1,24 @@
+{
+    "id": "pole-10-foot",
+    "name": "Pole (10-foot)",
+    "description": [
+        "When you suspect a trap, you can put the end of your 10-foot pole through that hole in the wall instead of reaching in with your hand."
+    ],
+    "weight": 7,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 5,
+        "cheap": 3,
+        "expensive": 8
+    },
+    "stores": {
+        "adventuring supplies": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/pole-10-foot"
+}

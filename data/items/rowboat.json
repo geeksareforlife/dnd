@@ -1,0 +1,24 @@
+{
+    "id": "rowboat",
+    "name": "Rowboat",
+    "description": [
+        "If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances."
+    ],
+    "weight": 100,
+    "category": "Vehicles",
+    "subcategory": "Waterbourne",
+    "cost": {
+        "normal": 5000,
+        "cheap": 3800,
+        "expensive": 7500
+    },
+    "stores": [],
+    "themes": {
+        "water-side": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/rowboat"
+}

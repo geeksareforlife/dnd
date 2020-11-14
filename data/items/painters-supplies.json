@@ -1,0 +1,25 @@
+{
+    "id": "painters-supplies",
+    "name": "Painter's Supplies",
+    "description": [
+        "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": 5,
+    "category": "Tools",
+    "subcategory": "Artisan\u2019s Tools",
+    "cost": {
+        "normal": 1000,
+        "cheap": 800,
+        "expensive": 1500
+    },
+    "stores": [],
+    "themes": {
+        "art and games": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/painters-supplies"
+}

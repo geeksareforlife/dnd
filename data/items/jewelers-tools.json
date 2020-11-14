@@ -1,0 +1,22 @@
+{
+    "id": "jewelers-tools",
+    "name": "Jeweler's Tools",
+    "description": [
+        "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": 2,
+    "category": "Tools",
+    "subcategory": "Artisan\u2019s Tools",
+    "cost": {
+        "normal": 2500,
+        "cheap": 1800,
+        "expensive": 3800
+    },
+    "stores": {
+        "adventuring supplies": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/jewelers-tools"
+}

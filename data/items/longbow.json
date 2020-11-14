@@ -1,0 +1,25 @@
+{
+    "id": "longbow",
+    "name": "Longbow",
+    "description": [
+        "Proficiency with a longbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 2,
+    "category": "Weapons",
+    "subcategory": "Martial Ranged Weapons",
+    "cost": {
+        "normal": 5000,
+        "cheap": 3800,
+        "expensive": 7500
+    },
+    "stores": {
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/longbow"
+}

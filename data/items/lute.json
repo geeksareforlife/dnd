@@ -1,0 +1,24 @@
+{
+    "id": "lute",
+    "name": "Lute",
+    "description": [
+        "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": 2,
+    "category": "Tools",
+    "subcategory": "Musical Instruments",
+    "cost": {
+        "normal": 3500,
+        "cheap": 2600,
+        "expensive": 5300
+    },
+    "stores": [],
+    "themes": {
+        "art and games": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/lute"
+}

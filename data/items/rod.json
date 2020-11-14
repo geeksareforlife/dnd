@@ -1,0 +1,22 @@
+{
+    "id": "rod",
+    "name": "Rod",
+    "description": [],
+    "weight": 2,
+    "category": "Adventuring Gear",
+    "subcategory": "Arcane Focus",
+    "cost": {
+        "normal": 1000,
+        "cheap": 700,
+        "expensive": 1500
+    },
+    "stores": [],
+    "themes": {
+        "magical": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/rod"
+}

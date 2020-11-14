@@ -1,0 +1,29 @@
+{
+    "id": "vial",
+    "name": "Vial",
+    "description": [
+        "A vial can hold 4 ounces of liquid."
+    ],
+    "weight": " -- ",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": {
+        "general": [
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/vial"
+}

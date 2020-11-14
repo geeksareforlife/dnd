@@ -1,0 +1,23 @@
+{
+    "id": "crossbow-light",
+    "name": "Crossbow, Light",
+    "description": [
+        "Proficiency with a light crossbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 5,
+    "category": "Weapons",
+    "subcategory": "Simple Ranged Weapons",
+    "cost": {
+        "normal": 2500,
+        "cheap": 1800,
+        "expensive": 3800
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/crossbow-light"
+}

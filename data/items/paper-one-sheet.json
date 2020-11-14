@@ -1,0 +1,26 @@
+{
+    "id": "paper-one-sheet",
+    "name": "Paper (one sheet)",
+    "description": [
+        "A sheet of standard paper is made from cloth fibers."
+    ],
+    "weight": " -- ",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 20,
+        "cheap": 10,
+        "expensive": 30
+    },
+    "stores": {
+        "general": [
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/paper-one-sheet"
+}

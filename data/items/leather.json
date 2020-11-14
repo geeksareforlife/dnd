@@ -1,0 +1,23 @@
+{
+    "id": "leather",
+    "name": "Leather",
+    "description": [
+        "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials."
+    ],
+    "weight": 10,
+    "category": "Armor",
+    "subcategory": "Light Armor",
+    "cost": {
+        "normal": 1000,
+        "cheap": 700,
+        "expensive": 1500
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/leather"
+}

@@ -1,0 +1,25 @@
+{
+    "id": "tent-two-person",
+    "name": "Tent, Two-person",
+    "description": [
+        "A simple and portable canvas shelter, a tent sleeps two."
+    ],
+    "weight": 20,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 200,
+        "cheap": 100,
+        "expensive": 300
+    },
+    "stores": {
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/tent-two-person"
+}

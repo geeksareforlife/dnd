@@ -1,0 +1,28 @@
+{
+    "id": "mirror-steel",
+    "name": "Mirror, Steel",
+    "description": [
+        "A steel mirror is handy when you want to look around corners, signal friends with reflected sunlight, keep an eye on a medusa, make sure that you look good enough to present yourself to the queen, or examine wounds that you\u2019ve received on hard-to-see parts of your body."
+    ],
+    "weight": "1\/2 lb",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "general": [
+            "rural",
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/mirror-steel"
+}

@@ -1,0 +1,23 @@
+{
+    "id": "padded",
+    "name": "Padded",
+    "description": [
+        "Padded armor consists of quilted layers of cloth and batting."
+    ],
+    "weight": 8,
+    "category": "Armor",
+    "subcategory": "Light Armor",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/padded"
+}

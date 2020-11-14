@@ -1,0 +1,23 @@
+{
+    "id": "block-and-tackle",
+    "name": "Block and Tackle",
+    "description": [
+        "A set of pulleys with a cable threaded through them and a hook to attach to objects, a block and tackle allows you to hoist up to four times the weight you can normally lift."
+    ],
+    "weight": 5,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/block-and-tackle"
+}

@@ -1,0 +1,25 @@
+{
+    "id": "poisoners-kit",
+    "name": "Poisoner's Kit",
+    "description": [
+        "A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons."
+    ],
+    "weight": 2,
+    "category": "Tools",
+    "subcategory": "",
+    "cost": {
+        "normal": 5000,
+        "cheap": 3800,
+        "expensive": 7500
+    },
+    "stores": [],
+    "themes": {
+        "shady dealer": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/poisoners-kit"
+}

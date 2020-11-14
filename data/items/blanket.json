@@ -1,0 +1,31 @@
+{
+    "id": "blanket",
+    "name": "Blanket",
+    "description": [
+        "A thick, quilted, blanket made to keep you warm in cold weather."
+    ],
+    "weight": 3,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 50,
+        "cheap": 30,
+        "expensive": 80
+    },
+    "stores": {
+        "general": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/blanket"
+}

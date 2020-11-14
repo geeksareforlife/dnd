@@ -1,0 +1,22 @@
+{
+    "id": "crossbow-heavy",
+    "name": "Crossbow, heavy",
+    "description": [
+        "Proficiency with a heavy crossbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 18,
+    "category": "Weapons",
+    "subcategory": "Martial Ranged Weapons",
+    "cost": {
+        "normal": 5000,
+        "cheap": 3800,
+        "expensive": 7500
+    },
+    "stores": {
+        "adventuring supplies": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/crossbow-heavy"
+}

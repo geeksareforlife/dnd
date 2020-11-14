@@ -1,0 +1,25 @@
+{
+    "id": "dagger",
+    "name": "Dagger",
+    "description": [
+        "Proficiency with a dagger allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": "1 lb",
+    "category": "Weapons",
+    "subcategory": "Simple Melee Weapons",
+    "cost": {
+        "normal": 200,
+        "cheap": 100,
+        "expensive": 300
+    },
+    "stores": {
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/dagger"
+}

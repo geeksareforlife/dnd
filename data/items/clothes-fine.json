@@ -1,0 +1,22 @@
+{
+    "id": "clothes-fine",
+    "name": "Clothes, Fine",
+    "description": [
+        "This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing."
+    ],
+    "weight": 6,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 1500,
+        "cheap": 1100,
+        "expensive": 2300
+    },
+    "stores": {
+        "general": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/clothes-fine"
+}

@@ -1,0 +1,31 @@
+{
+    "id": "pot-iron",
+    "name": "Pot, Iron",
+    "description": [
+        "An iron pot can hold 1 gallon of liquid."
+    ],
+    "weight": 10,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 200,
+        "cheap": 100,
+        "expensive": 300
+    },
+    "stores": {
+        "general": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/pot-iron"
+}

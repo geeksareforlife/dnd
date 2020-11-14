@@ -1,0 +1,23 @@
+{
+    "id": "rations-1-day",
+    "name": "Rations (1 day)",
+    "description": [
+        "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
+    ],
+    "weight": 2,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 50,
+        "cheap": 30,
+        "expensive": 80
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/rations-1-day"
+}

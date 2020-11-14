@@ -1,0 +1,24 @@
+{
+    "id": "journal-soft-bound-25-sheets",
+    "name": "Journal, Soft Bound, 25 Sheets",
+    "description": [
+        "25 sheets of crisp white paper, bound in a soft leather covering, just waiting to be written in"
+    ],
+    "weight": 1,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 700,
+        "cheap": 500,
+        "expensive": 1100
+    },
+    "stores": {
+        "general": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": ""
+}

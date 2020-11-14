@@ -1,0 +1,22 @@
+{
+    "id": "viol",
+    "name": "Viol",
+    "description": [
+        "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": "1 lb",
+    "category": "Tools",
+    "subcategory": "Musical Instruments",
+    "cost": {
+        "normal": 3000,
+        "cheap": 2200,
+        "expensive": 4500
+    },
+    "stores": [],
+    "themes": {
+        "art and games": [
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/viol"
+}

@@ -1,0 +1,25 @@
+{
+    "id": "hammer",
+    "name": "Hammer",
+    "description": [
+        "This one-handed hammer with an iron head is useful for pounding pitons into a wall."
+    ],
+    "weight": 3,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": {
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/hammer"
+}

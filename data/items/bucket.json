@@ -1,0 +1,24 @@
+{
+    "id": "bucket",
+    "name": "Bucket",
+    "description": [
+        "A bucket can hold 3 gallons of liquid, or 1\/2 cubic foot of solid material."
+    ],
+    "weight": 2,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 5,
+        "cheap": 3,
+        "expensive": 8
+    },
+    "stores": {
+        "general": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/bucket"
+}

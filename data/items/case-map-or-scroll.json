@@ -1,0 +1,24 @@
+{
+    "id": "case-map-or-scroll",
+    "name": "Case, Map or Scroll",
+    "description": [
+        "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment."
+    ],
+    "weight": "1 lb",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": {
+        "adventuring supplies": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/case-map-or-scroll"
+}

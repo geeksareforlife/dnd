@@ -1,0 +1,23 @@
+{
+    "id": "case-crossbow-bolt",
+    "name": "Case, Crossbow Bolt",
+    "description": [
+        "This wooden case can hold up to twenty crossbow bolts."
+    ],
+    "weight": "1 lb",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/case-crossbow-bolt"
+}

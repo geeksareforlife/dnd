@@ -1,0 +1,23 @@
+{
+    "id": "sling",
+    "name": "Sling",
+    "description": [
+        "Proficiency with a sling allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": " -- ",
+    "category": "Weapons",
+    "subcategory": "Simple Ranged Weapons",
+    "cost": {
+        "normal": 10,
+        "cheap": 7,
+        "expensive": 20
+    },
+    "stores": {
+        "adventuring supplies": [
+            "rural",
+            "urban"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/sling"
+}

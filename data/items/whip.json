@@ -1,0 +1,24 @@
+{
+    "id": "whip",
+    "name": "Whip",
+    "description": [
+        "Proficiency with a whip allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 3,
+    "category": "Weapons",
+    "subcategory": "Martial Melee Weapons",
+    "cost": {
+        "normal": 200,
+        "cheap": 100,
+        "expensive": 300
+    },
+    "stores": {
+        "adventuring supplies": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/whip"
+}

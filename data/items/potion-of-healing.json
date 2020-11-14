@@ -1,0 +1,23 @@
+{
+    "id": "potion-of-healing",
+    "name": "Potion of Healing",
+    "description": [
+        "A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action."
+    ],
+    "weight": "1\/2 lb",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 5000,
+        "cheap": 3800,
+        "expensive": 7500
+    },
+    "stores": [],
+    "themes": {
+        "magical": [
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/potion-of-healing"
+}
