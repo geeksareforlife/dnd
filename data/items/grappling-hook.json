@@ -1,0 +1,24 @@
+{
+    "id": "grappling-hook",
+    "name": "Grappling Hook",
+    "description": [
+        "When tied to the end of a rope, a grappling hook can secure the rope to a battlement, window ledge, tree limb, or other protrusion."
+    ],
+    "weight": 4,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 200,
+        "cheap": 100,
+        "expensive": 300
+    },
+    "stores": {
+        "adventuring supplies": [
+            "limited",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/grappling-hook"
+}

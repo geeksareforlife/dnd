@@ -1,0 +1,25 @@
+{
+    "id": "navigators-tools",
+    "name": "Navigator's Tools",
+    "description": [
+        "This set of instruments is used for navigation at sea. Proficiency with navigator's tools lets you chart a ship's course and follow navigation charts. In addition, these tools allow you to add your proficiency bonus to any ability check you make to avoid getting lost at sea."
+    ],
+    "weight": 2,
+    "category": "Tools",
+    "subcategory": "",
+    "cost": {
+        "normal": 2500,
+        "cheap": 1800,
+        "expensive": 3800
+    },
+    "stores": {
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/navigators-tools"
+}

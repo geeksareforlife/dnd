@@ -1,0 +1,28 @@
+{
+    "id": "ladder-10-foot",
+    "name": "Ladder (10-foot)",
+    "description": [
+        "This item is a straight, simple wooden ladder."
+    ],
+    "weight": 25,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 10,
+        "cheap": 7,
+        "expensive": 20
+    },
+    "stores": {
+        "general": [
+            "rural",
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/ladder-10-foot"
+}

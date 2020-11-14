@@ -1,0 +1,20 @@
+{
+    "id": "orb",
+    "name": "Orb",
+    "description": [],
+    "weight": 3,
+    "category": "Adventuring Gear",
+    "subcategory": "Arcane Focus",
+    "cost": {
+        "normal": 2000,
+        "cheap": 1500,
+        "expensive": 3000
+    },
+    "stores": [],
+    "themes": {
+        "magical": [
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/orb"
+}

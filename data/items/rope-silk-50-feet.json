@@ -1,0 +1,25 @@
+{
+    "id": "rope-silk-50-feet",
+    "name": "Rope, Silk (50 feet)",
+    "description": [
+        "Rope, has 2 hit points and can be burst with a DC 17 Strength check."
+    ],
+    "weight": 5,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 1000,
+        "cheap": 700,
+        "expensive": 1500
+    },
+    "stores": {
+        "general": [
+            "premium"
+        ],
+        "adventuring supplies": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/rope-silk-50-feet"
+}

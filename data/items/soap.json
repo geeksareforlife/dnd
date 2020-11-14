@@ -1,0 +1,23 @@
+{
+    "id": "soap",
+    "name": "Soap",
+    "description": [
+        "A commodity used for bathing."
+    ],
+    "weight": " -- ",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 2,
+        "cheap": 1,
+        "expensive": 3
+    },
+    "stores": {
+        "general": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/soap"
+}

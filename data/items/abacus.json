@@ -1,0 +1,23 @@
+{
+    "id": "abacus",
+    "name": "Abacus",
+    "description": [
+        "A standard tool used to make calculations."
+    ],
+    "weight": 2,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 200,
+        "cheap": 100,
+        "expensive": 300
+    },
+    "stores": {
+        "general": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/abacus"
+}

@@ -1,0 +1,26 @@
+{
+    "id": "signet-ring",
+    "name": "Signet Ring",
+    "description": [
+        "Each signet ring has a distinctive design carved into it. When you press this ring into warm sealing wax, you leave an identifying mark."
+    ],
+    "weight": " -- ",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "general": [
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/signet-ring"
+}

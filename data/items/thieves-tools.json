@@ -1,0 +1,25 @@
+{
+    "id": "thieves-tools",
+    "name": "Thieves' Tools",
+    "description": [
+        "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks."
+    ],
+    "weight": "1 lb",
+    "category": "Tools",
+    "subcategory": "",
+    "cost": {
+        "normal": 2500,
+        "cheap": 1800,
+        "expensive": 3800
+    },
+    "stores": [],
+    "themes": {
+        "shady dealer": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/thieves-tools"
+}

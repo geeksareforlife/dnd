@@ -1,0 +1,23 @@
+{
+    "id": "crossbow-hand",
+    "name": "Crossbow, hand",
+    "description": [
+        "Proficiency with a hand crossbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 3,
+    "category": "Weapons",
+    "subcategory": "Martial Ranged Weapons",
+    "cost": {
+        "normal": 7500,
+        "cheap": 5600,
+        "expensive": 11300
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/crossbow-hand"
+}

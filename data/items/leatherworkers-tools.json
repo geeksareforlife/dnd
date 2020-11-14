@@ -1,0 +1,23 @@
+{
+    "id": "leatherworkers-tools",
+    "name": "Leatherworker's Tools",
+    "description": [
+        "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": 5,
+    "category": "Tools",
+    "subcategory": "Artisan\u2019s Tools",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "general": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/leatherworkers-tools"
+}

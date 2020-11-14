@@ -1,0 +1,26 @@
+{
+    "id": "net",
+    "name": "Net",
+    "description": [
+        "Proficiency with a net allows you to add your proficiency bonus to the attack roll for any attack you make with it.",
+        "When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+    ],
+    "weight": 3,
+    "category": "Weapons",
+    "subcategory": "Martial Ranged Weapons",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": [],
+    "themes": {
+        "water-side": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/net"
+}

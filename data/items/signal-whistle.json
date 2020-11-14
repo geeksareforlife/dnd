@@ -1,0 +1,23 @@
+{
+    "id": "signal-whistle",
+    "name": "Signal Whistle",
+    "description": [
+        "A small whistle used for signaling."
+    ],
+    "weight": " -- ",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 5,
+        "cheap": 3,
+        "expensive": 8
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/signal-whistle"
+}

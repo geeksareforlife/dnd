@@ -1,0 +1,26 @@
+{
+    "id": "glassblowers-tools",
+    "name": "Glassblower's Tools",
+    "description": [
+        "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
+    ],
+    "weight": 5,
+    "category": "Tools",
+    "subcategory": "Artisan\u2019s Tools",
+    "cost": {
+        "normal": 3000,
+        "cheap": 2200,
+        "expensive": 4500
+    },
+    "stores": {
+        "general": [
+            "premium"
+        ]
+    },
+    "themes": {
+        "art and games": [
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/glassblowers-tools"
+}

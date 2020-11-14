@@ -1,0 +1,28 @@
+{
+    "id": "chest",
+    "name": "Chest",
+    "description": [
+        "A chest can hold 12 cubic feet\/ 300 pounds of gear."
+    ],
+    "weight": 25,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "general": [
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/chest"
+}

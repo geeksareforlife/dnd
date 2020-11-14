@@ -1,0 +1,22 @@
+{
+    "id": "studded-leather",
+    "name": "Studded Leather",
+    "description": [
+        "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
+    ],
+    "weight": 13,
+    "category": "Armor",
+    "subcategory": "Light Armor",
+    "cost": {
+        "normal": 4500,
+        "cheap": 3300,
+        "expensive": 6800
+    },
+    "stores": {
+        "adventuring supplies": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/studded-leather"
+}

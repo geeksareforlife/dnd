@@ -1,0 +1,23 @@
+{
+    "id": "spyglass",
+    "name": "Spyglass",
+    "description": [
+        "Objects viewed through a spyglass are magnified to twice their size."
+    ],
+    "weight": "1 lb",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 100000,
+        "cheap": 75000,
+        "expensive": 150000
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/spyglass"
+}

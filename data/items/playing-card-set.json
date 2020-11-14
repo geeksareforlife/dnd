@@ -1,0 +1,29 @@
+{
+    "id": "playing-card-set",
+    "name": "Playing Card Set",
+    "description": [
+        "If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set."
+    ],
+    "weight": " -- ",
+    "category": "Tools",
+    "subcategory": "Gaming Set",
+    "cost": {
+        "normal": 50,
+        "cheap": 30,
+        "expensive": 80
+    },
+    "stores": [],
+    "themes": {
+        "shady dealer": [
+            "rural",
+            "urban",
+            "premium"
+        ],
+        "art and games": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/playing-card-set"
+}

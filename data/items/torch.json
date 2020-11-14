@@ -1,0 +1,25 @@
+{
+    "id": "torch",
+    "name": "Torch",
+    "description": [
+        "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage."
+    ],
+    "weight": "1 lb",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 1,
+        "cheap": 1,
+        "expensive": 2
+    },
+    "stores": {
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/torch"
+}

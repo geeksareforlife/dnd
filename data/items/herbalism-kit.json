@@ -1,0 +1,21 @@
+{
+    "id": "herbalism-kit",
+    "name": "Herbalism Kit",
+    "description": [],
+    "weight": 3,
+    "category": "Tools",
+    "subcategory": "",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/herbalism-kit"
+}

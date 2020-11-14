@@ -1,0 +1,22 @@
+{
+    "id": "clothes-costume",
+    "name": "Clothes, Costume",
+    "description": [
+        "This set of clothes is fashioned after a particular costume, typically meant for entertaining."
+    ],
+    "weight": 4,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": [],
+    "themes": {
+        "shady dealer": [
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/clothes-costume"
+}

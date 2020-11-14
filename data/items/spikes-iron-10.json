@@ -1,0 +1,22 @@
+{
+    "id": "spikes-iron-10",
+    "name": "Spikes, Iron (10)",
+    "description": [
+        "Standard iron spikes typically used with a hammer."
+    ],
+    "weight": 5,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": [],
+    "themes": {
+        "shady dealer": [
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/spikes-iron-10"
+}

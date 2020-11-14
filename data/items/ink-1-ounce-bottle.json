@@ -1,0 +1,28 @@
+{
+    "id": "ink-1-ounce-bottle",
+    "name": "Ink (1 ounce bottle)",
+    "description": [
+        "Ink is typically used with an ink pen to write."
+    ],
+    "weight": " -- ",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 1000,
+        "cheap": 700,
+        "expensive": 1500
+    },
+    "stores": {
+        "general": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/ink-1-ounce-bottle"
+}

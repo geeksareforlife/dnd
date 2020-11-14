@@ -1,0 +1,23 @@
+{
+    "id": "lantern-bullseye",
+    "name": "Lantern, Bullseye",
+    "description": [
+        "A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
+    ],
+    "weight": 2,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 1000,
+        "cheap": 700,
+        "expensive": 1500
+    },
+    "stores": {
+        "adventuring supplies": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/lantern-bullseye"
+}

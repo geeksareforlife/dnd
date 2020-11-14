@@ -1,0 +1,25 @@
+{
+    "id": "poison-basic-vial",
+    "name": "Poison, Basic (vial)",
+    "description": [
+        "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+    ],
+    "weight": " -- ",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 10000,
+        "cheap": 7500,
+        "expensive": 15000
+    },
+    "stores": [],
+    "themes": {
+        "shady dealer": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/poison-basic-vial"
+}

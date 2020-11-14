@@ -1,0 +1,20 @@
+{
+    "id": "healers-kit",
+    "name": "Healer's Kit",
+    "description": [],
+    "weight": 3,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "adventuring supplies": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/healers-kit"
+}

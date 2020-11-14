@@ -1,0 +1,25 @@
+{
+    "id": "waterskin",
+    "name": "Waterskin",
+    "description": [
+        "A waterskin can hold 4 pints of liquid."
+    ],
+    "weight": 5,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 20,
+        "cheap": 10,
+        "expensive": 30
+    },
+    "stores": {
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/waterskin"
+}

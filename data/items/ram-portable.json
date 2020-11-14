@@ -1,0 +1,22 @@
+{
+    "id": "ram-portable",
+    "name": "Ram, Portable",
+    "description": [
+        "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check."
+    ],
+    "weight": 35,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 400,
+        "cheap": 300,
+        "expensive": 600
+    },
+    "stores": [],
+    "themes": {
+        "shady dealer": [
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/ram-portable"
+}

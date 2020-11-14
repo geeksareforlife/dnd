@@ -1,0 +1,24 @@
+{
+    "id": "piton",
+    "name": "Piton",
+    "description": [
+        "When a wall doesn\u2019t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope."
+    ],
+    "weight": "1\/4 lb",
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 5,
+        "cheap": 3,
+        "expensive": 8
+    },
+    "stores": {
+        "adventuring supplies": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/piton"
+}

@@ -1,0 +1,30 @@
+{
+    "id": "bottle-glass",
+    "name": "Bottle, glass",
+    "description": [
+        "A bottle can hold 1 1\/2 pints of liquid."
+    ],
+    "weight": 2,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 200,
+        "cheap": 100,
+        "expensive": 300
+    },
+    "stores": {
+        "general": [
+            "rural",
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/bottle-glass"
+}

@@ -1,0 +1,30 @@
+{
+    "id": "shovel",
+    "name": "Shovel",
+    "description": [
+        "A standard shovel used for digging."
+    ],
+    "weight": 5,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 200,
+        "cheap": 100,
+        "expensive": 300
+    },
+    "stores": {
+        "general": [
+            "rural",
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/shovel"
+}

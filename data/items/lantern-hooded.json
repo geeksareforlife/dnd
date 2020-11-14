@@ -1,0 +1,29 @@
+{
+    "id": "lantern-hooded",
+    "name": "Lantern, Hooded",
+    "description": [
+        "A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius."
+    ],
+    "weight": 2,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "general": [
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/lantern-hooded"
+}

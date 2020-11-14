@@ -1,0 +1,30 @@
+{
+    "id": "rope-hempen-50-feet",
+    "name": "Rope, Hempen (50 feet)",
+    "description": [
+        "Rope, has 2 hit points and can be burst with a DC 17 Strength check."
+    ],
+    "weight": 10,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": {
+        "general": [
+            "rural",
+            "urban",
+            "premium"
+        ],
+        "adventuring supplies": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/rope-hempen-50-feet"
+}

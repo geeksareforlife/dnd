@@ -1,0 +1,22 @@
+{
+    "id": "club",
+    "name": "Club",
+    "description": [
+        "Proficiency with a club allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 2,
+    "category": "Weapons",
+    "subcategory": "Simple Melee Weapons",
+    "cost": {
+        "normal": 10,
+        "cheap": 7,
+        "expensive": 20
+    },
+    "stores": {
+        "adventuring supplies": [
+            "rural"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/club"
+}

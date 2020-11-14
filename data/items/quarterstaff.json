@@ -1,0 +1,23 @@
+{
+    "id": "quarterstaff",
+    "name": "Quarterstaff",
+    "description": [
+        "Proficiency with a quarterstaff allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 4,
+    "category": "Weapons",
+    "subcategory": "Simple Melee Weapons",
+    "cost": {
+        "normal": 20,
+        "cheap": 10,
+        "expensive": 30
+    },
+    "stores": {
+        "adventuring supplies": [
+            "rural",
+            "urban"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/quarterstaff"
+}

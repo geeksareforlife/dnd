@@ -1,0 +1,25 @@
+{
+    "id": "fishing-bait",
+    "name": "Fishing Bait",
+    "description": [
+        "Locale-specific bait for use with Fishing Tackle"
+    ],
+    "weight": 1,
+    "category": "Trade Goods",
+    "subcategory": "",
+    "cost": {
+        "normal": 5,
+        "cheap": 3,
+        "expensive": 8
+    },
+    "stores": [],
+    "themes": {
+        "water-side": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": ""
+}

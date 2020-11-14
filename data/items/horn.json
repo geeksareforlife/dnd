@@ -1,0 +1,23 @@
+{
+    "id": "horn",
+    "name": "Horn",
+    "description": [
+        "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": 2,
+    "category": "Tools",
+    "subcategory": "Musical Instruments",
+    "cost": {
+        "normal": 300,
+        "cheap": 200,
+        "expensive": 500
+    },
+    "stores": [],
+    "themes": {
+        "art and games": [
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/horn"
+}

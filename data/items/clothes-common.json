@@ -1,0 +1,24 @@
+{
+    "id": "clothes-common",
+    "name": "Clothes, Common",
+    "description": [
+        "This set of clothes could consist of a loose shirt and baggy breeches, or a loose shirt and skirt or overdress. Cloth wrappings are used for shoes."
+    ],
+    "weight": 3,
+    "category": "Adventuring Gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 50,
+        "cheap": 30,
+        "expensive": 80
+    },
+    "stores": {
+        "general": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/clothes-common"
+}

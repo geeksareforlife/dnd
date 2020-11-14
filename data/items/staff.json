@@ -1,0 +1,23 @@
+{
+    "id": "staff",
+    "name": "Staff",
+    "description": [],
+    "weight": 4,
+    "category": "Adventuring Gear",
+    "subcategory": "Arcane Focus",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": [],
+    "themes": {
+        "magical": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/staff"
+}

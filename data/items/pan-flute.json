@@ -1,0 +1,24 @@
+{
+    "id": "pan-flute",
+    "name": "Pan Flute",
+    "description": [
+        "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
+    ],
+    "weight": 2,
+    "category": "Tools",
+    "subcategory": "Musical Instruments",
+    "cost": {
+        "normal": 1200,
+        "cheap": 900,
+        "expensive": 1800
+    },
+    "stores": [],
+    "themes": {
+        "art and games": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/pan-flute"
+}
