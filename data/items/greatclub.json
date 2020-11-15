@@ -5,8 +5,8 @@
         "Proficiency with a greatclub allows you to add your proficiency bonus to the attack roll for any attack you make with it."
     ],
     "weight": 10,
-    "category": "Weapons",
-    "subcategory": "Simple Melee Weapons",
+    "category": "weapons",
+    "subcategory": "simple melee weapons",
     "cost": {
         "normal": 20,
         "cheap": 10,

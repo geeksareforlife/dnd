@@ -41,8 +41,8 @@ foreach ($items as $item) {
             'name'          => $item['Item Name'] . $item['Suffix'],
             'description'   => [],
             'weight'        => '',
-            'category'      => $item['Category'],
-            'subcategory'   => $item['Sub Category'],
+            'category'      => strtolower($item['Category']),
+            'subcategory'   => strtolower($item['Sub Category']),
             'cost'          => [
                 'normal'    => getCoppers($item['Cost (Normal)']),
                 'cheap'     => getCoppers($item['Cost (Cheap)']),

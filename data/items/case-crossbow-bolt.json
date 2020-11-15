@@ -5,7 +5,7 @@
         "This wooden case can hold up to twenty crossbow bolts."
     ],
     "weight": "1 lb",
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 100,

@@ -3,8 +3,8 @@
     "name": "Staff",
     "description": [],
     "weight": 4,
-    "category": "Adventuring Gear",
-    "subcategory": "Arcane Focus",
+    "category": "adventuring gear",
+    "subcategory": "arcane focus",
     "cost": {
         "normal": 500,
         "cheap": 300,

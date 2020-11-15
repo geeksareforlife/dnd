@@ -5,7 +5,7 @@
         "Locale-specific bait for use with Fishing Tackle"
     ],
     "weight": 1,
-    "category": "Trade Goods",
+    "category": "trade goods",
     "subcategory": "",
     "cost": {
         "normal": 5,

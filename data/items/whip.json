@@ -5,8 +5,8 @@
         "Proficiency with a whip allows you to add your proficiency bonus to the attack roll for any attack you make with it."
     ],
     "weight": 3,
-    "category": "Weapons",
-    "subcategory": "Martial Melee Weapons",
+    "category": "weapons",
+    "subcategory": "martial melee weapons",
     "cost": {
         "normal": 200,
         "cheap": 100,

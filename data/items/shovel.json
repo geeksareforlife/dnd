@@ -5,7 +5,7 @@
         "A standard shovel used for digging."
     ],
     "weight": 5,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 200,

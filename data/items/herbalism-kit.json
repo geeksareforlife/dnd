@@ -3,7 +3,7 @@
     "name": "Herbalism Kit",
     "description": [],
     "weight": 3,
-    "category": "Tools",
+    "category": "tools",
     "subcategory": "",
     "cost": {
         "normal": 500,

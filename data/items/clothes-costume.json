@@ -5,7 +5,7 @@
         "This set of clothes is fashioned after a particular costume, typically meant for entertaining."
     ],
     "weight": 4,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 500,

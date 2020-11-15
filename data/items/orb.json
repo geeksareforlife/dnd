@@ -3,8 +3,8 @@
     "name": "Orb",
     "description": [],
     "weight": 3,
-    "category": "Adventuring Gear",
-    "subcategory": "Arcane Focus",
+    "category": "adventuring gear",
+    "subcategory": "arcane focus",
     "cost": {
         "normal": 2000,
         "cheap": 1500,

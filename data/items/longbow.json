@@ -5,8 +5,8 @@
         "Proficiency with a longbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
     ],
     "weight": 2,
-    "category": "Weapons",
-    "subcategory": "Martial Ranged Weapons",
+    "category": "weapons",
+    "subcategory": "martial ranged weapons",
     "cost": {
         "normal": 5000,
         "cheap": 3800,

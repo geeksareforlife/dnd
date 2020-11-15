@@ -3,8 +3,8 @@
     "name": "Wand",
     "description": [],
     "weight": "1 lb",
-    "category": "Adventuring Gear",
-    "subcategory": "Arcane Focus",
+    "category": "adventuring gear",
+    "subcategory": "arcane focus",
     "cost": {
         "normal": 1000,
         "cheap": 700,
