@@ -23,7 +23,23 @@ foreach ($dir as $fileinfo) {
                     if (!isset($shopLists[$store][$locale])) {
                         $shopLists[$store][$locale] = [];
                     }
-                    $shopLists[$store][$locale][] = $item['id'];
+                    // category and sub-category
+                    $category = $item['category'];
+                    if (!isset($shopLists[$store][$locale][$category])) {
+                        $shopLists[$store][$locale][$category] = [];
+                    }
+                    $subcategory = $item['subcategory'];
+                    if ($subcategory == "") {
+                        // store an item without a subcategory as a key without real content
+                        $shopLists[$store][$locale][$category][$item['id']] = "item";
+                    } else {
+                        // store items in subcats in an array
+                        if (!isset($shopLists[$store][$locale][$category][$subcategory])) {
+                            $shopLists[$store][$locale][$category][$subcategory] = [];
+                        }
+                        $shopLists[$store][$locale][$category][$subcategory][] = $item['id'];
+                    }
+                    
                 }
             }
         }
