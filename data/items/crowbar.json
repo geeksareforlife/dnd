@@ -5,7 +5,7 @@
         "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied."
     ],
     "weight": 5,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 200,

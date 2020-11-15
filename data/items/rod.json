@@ -3,8 +3,8 @@
     "name": "Rod",
     "description": [],
     "weight": 2,
-    "category": "Adventuring Gear",
-    "subcategory": "Arcane Focus",
+    "category": "adventuring gear",
+    "subcategory": "arcane focus",
     "cost": {
         "normal": 1000,
         "cheap": 700,

@@ -5,7 +5,7 @@
         "Standard iron spikes typically used with a hammer."
     ],
     "weight": 5,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 100,

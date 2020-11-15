@@ -5,7 +5,7 @@
         "This one-handed hammer with an iron head is useful for pounding pitons into a wall."
     ],
     "weight": 3,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 100,

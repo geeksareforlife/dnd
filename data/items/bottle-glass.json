@@ -5,7 +5,7 @@
         "A bottle can hold 1 1\/2 pints of liquid."
     ],
     "weight": 2,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 200,

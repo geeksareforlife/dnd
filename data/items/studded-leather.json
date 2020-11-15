@@ -5,8 +5,8 @@
         "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
     ],
     "weight": 13,
-    "category": "Armor",
-    "subcategory": "Light Armor",
+    "category": "armor",
+    "subcategory": "light armor",
     "cost": {
         "normal": 4500,
         "cheap": 3300,

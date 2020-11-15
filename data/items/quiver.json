@@ -5,7 +5,7 @@
         "A quiver can hold up to 20 arrows."
     ],
     "weight": "1 lb",
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 100,

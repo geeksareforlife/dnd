@@ -6,8 +6,8 @@
         "When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
     ],
     "weight": 3,
-    "category": "Weapons",
-    "subcategory": "Martial Ranged Weapons",
+    "category": "weapons",
+    "subcategory": "martial ranged weapons",
     "cost": {
         "normal": 100,
         "cheap": 70,

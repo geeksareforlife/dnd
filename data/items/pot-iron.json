@@ -5,7 +5,7 @@
         "An iron pot can hold 1 gallon of liquid."
     ],
     "weight": 10,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 200,

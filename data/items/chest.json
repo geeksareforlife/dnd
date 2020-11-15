@@ -5,7 +5,7 @@
         "A chest can hold 12 cubic feet\/ 300 pounds of gear."
     ],
     "weight": 25,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 500,

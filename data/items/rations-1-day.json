@@ -5,7 +5,7 @@
         "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
     ],
     "weight": 2,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 50,

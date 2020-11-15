@@ -5,7 +5,7 @@
         "A bucket can hold 3 gallons of liquid, or 1\/2 cubic foot of solid material."
     ],
     "weight": 2,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 5,

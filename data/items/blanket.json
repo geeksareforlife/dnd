@@ -5,7 +5,7 @@
         "A thick, quilted, blanket made to keep you warm in cold weather."
     ],
     "weight": 3,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 50,

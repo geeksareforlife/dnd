@@ -5,7 +5,7 @@
         "A barrel can hold 40 gallons of liquid, or 4 cubic feet of solid material."
     ],
     "weight": 70,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 200,

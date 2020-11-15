@@ -5,7 +5,7 @@
         "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet."
     ],
     "weight": " -- ",
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 1,

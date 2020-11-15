@@ -5,7 +5,7 @@
         "A standard tool used to make calculations."
     ],
     "weight": 2,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 200,

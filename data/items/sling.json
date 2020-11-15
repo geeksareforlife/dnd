@@ -5,8 +5,8 @@
         "Proficiency with a sling allows you to add your proficiency bonus to the attack roll for any attack you make with it."
     ],
     "weight": " -- ",
-    "category": "Weapons",
-    "subcategory": "Simple Ranged Weapons",
+    "category": "weapons",
+    "subcategory": "simple ranged weapons",
     "cost": {
         "normal": 10,
         "cheap": 7,

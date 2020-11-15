@@ -5,8 +5,8 @@
         "Proficiency with a hand crossbow allows you to add your proficiency bonus to the attack roll for any attack you make with it."
     ],
     "weight": 3,
-    "category": "Weapons",
-    "subcategory": "Martial Ranged Weapons",
+    "category": "weapons",
+    "subcategory": "martial ranged weapons",
     "cost": {
         "normal": 7500,
         "cheap": 5600,

@@ -5,8 +5,8 @@
         "Padded armor consists of quilted layers of cloth and batting."
     ],
     "weight": 8,
-    "category": "Armor",
-    "subcategory": "Light Armor",
+    "category": "armor",
+    "subcategory": "light armor",
     "cost": {
         "normal": 500,
         "cheap": 300,

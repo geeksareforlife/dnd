@@ -5,7 +5,7 @@
         "A waterskin can hold 4 pints of liquid."
     ],
     "weight": 5,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 20,

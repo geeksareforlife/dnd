@@ -5,7 +5,7 @@
         "A sack can hold 1 cubic foot\/ 30 pounds of gear."
     ],
     "weight": "1\/2 lb",
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 1,

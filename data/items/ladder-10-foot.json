@@ -5,7 +5,7 @@
         "This item is a straight, simple wooden ladder."
     ],
     "weight": 25,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 10,

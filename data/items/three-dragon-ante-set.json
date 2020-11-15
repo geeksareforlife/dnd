@@ -5,8 +5,8 @@
         "If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set."
     ],
     "weight": " -- ",
-    "category": "Tools",
-    "subcategory": "Gaming Set",
+    "category": "tools",
+    "subcategory": "gaming set",
     "cost": {
         "normal": 100,
         "cheap": 70,

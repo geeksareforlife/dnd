@@ -3,7 +3,7 @@
     "name": "Healer's Kit",
     "description": [],
     "weight": 3,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 500,

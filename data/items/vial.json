@@ -5,7 +5,7 @@
         "A vial can hold 4 ounces of liquid."
     ],
     "weight": " -- ",
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 100,

@@ -5,7 +5,7 @@
         "A simple and portable canvas shelter, a tent sleeps two."
     ],
     "weight": 20,
-    "category": "Adventuring Gear",
+    "category": "adventuring gear",
     "subcategory": "",
     "cost": {
         "normal": 200,
