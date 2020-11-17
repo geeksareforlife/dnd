@@ -4,7 +4,7 @@
     "description": [
         "A standard hourglass used to measure the passage of time."
     ],
-    "weight": "1 lb",
+    "weight": 1,
     "category": "adventuring gear",
     "subcategory": "",
     "cost": {

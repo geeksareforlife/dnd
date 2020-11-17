@@ -4,7 +4,7 @@
     "description": [
         "A vial can hold 4 ounces of liquid."
     ],
-    "weight": " -- ",
+    "weight": 0,
     "category": "adventuring gear",
     "subcategory": "",
     "cost": {

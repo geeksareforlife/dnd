@@ -37,6 +37,8 @@ $(document).ready(function() {
     $('#type').change(toggleTheme);
 
     $('#submit').click(buildShop);
+
+    $('#buy').click(buyGoods);
 });
 
 function toggleTheme()
@@ -48,6 +50,91 @@ function toggleTheme()
     } else {
         $('#theme').prop('disabled', true);
     }
+}
+
+function itemDetails(itemID)
+{
+    var item = itemIndex[itemID];
+
+    // all of these are complete replacements
+    $('#itemDetailsLabel').html(toTitleCase(item.name));
+    $('#itemWeight').html(item.weight + " lb");
+    $('#itemCheap').html(displayMoney(item.cost.cheap));
+    $('#itemNormal').html(displayMoney(item.cost.normal));
+    $('#itemExpensive').html(displayMoney(item.cost.expensive));
+
+    $('.itemCost').removeClass('text-success').removeClass('font-weight-bold').addClass('text-muted');
+
+    $('#item' + toTitleCase(shopValue)).addClass('text-success').addClass('font-weight-bold').removeClass('text-muted');
+
+    // work out buying prices
+    var valueCost = item.cost[shopValue];
+
+    var buy = Math.floor(valueCost * 0.5);
+    var buyMax = Math.floor(valueCost * 0.75);
+
+    $('#itemBuy').html(displayMoney(buy));
+    $('#itemBuyMax').html(displayMoney(buyMax));
+
+
+    // these need clearing before adding the new content
+    $('#itemDescription').html('');
+    $('#itemCategories').html('');
+    $('#itemStores').html('');
+
+    for (var i = 0; i < item.description.length; i++) {
+        $('#itemDescription').append('<p>' + item.description[i] + '</p>');
+    }
+    $('#itemDescription').append('<p><a href="' + item.url + '">View on DNDBeyond</a></p>');
+
+    $('#itemCategories').append(displayBadge(item.category, 'primary'));
+    if (item.subcategory != "") {
+        $('#itemCategories').append(' / ' + displayBadge(item.subcategory, 'primary'));
+    }
+
+    for (store in item.stores) {
+        for (var j = 0; j < item.stores[store].length; j++) {
+            $('#itemStores').append(displayBadge(store + '-' + item.stores[store][j], 'primary'))
+        }
+    }
+
+    for (theme in item.themes) {
+        for (var j = 0; j < item.themes[theme].length; j++) {
+            $('#itemStores').append(displayBadge(theme + '-' + item.themes[theme][j], 'info'))
+        }
+    }
+
+    $('#itemDetails').modal({});
+}
+
+function buyGoods()
+{
+    var daily = $('#goldDaily').attr('data-coppers');
+    var cap = $('#goldCap').attr('data-coppers');
+
+    var gp = parseInt(0 + $('#buyGP').val(), 10);
+    var sp = parseInt(0 + $('#buySP').val(), 10);
+    var cp = parseInt(0 + $('#buyCP').val(), 10);
+
+    coppers = (gp*100) + (sp*10) + cp;
+
+    daily = daily - coppers;
+    if (daily <= 0) {
+        daily = 0;
+        $('#goldDaily').addClass('text-danger');
+    }
+
+    cap = cap - coppers;
+
+    $('#goldDaily').attr('data-coppers', daily).html(displayMoney(daily));
+    $('#goldCap').attr('data-coppers', cap).html(displayMoney(cap));
+
+    // clear form
+    $('#buyGP').val('');
+    $('#buySP').val('');
+    $('#buyCP').val('');
+
+    return false;
 }
 
 function buildShop()
@@ -111,6 +198,18 @@ function buildShop()
     
     displayItems(items);
 
+    // sort out gold
+    var daily = shops[type].funds.daily[shopValue];
+    var cap = shops[type].funds.cap[shopValue];
+
+    $('#goldDaily').attr('data-coppers', daily).html(displayMoney(daily));
+    $('#goldCap').attr('data-coppers', cap).html(displayMoney(cap));
+
+    $('#goldDaily').removeClass('text-danger');
+
+    $('table').removeClass('invisible');
+    $('#sidebar').removeClass('invisible');
+
     return false;
 }
 
@@ -164,7 +263,7 @@ function addItem(item, indent)
     } else {
         output += '<td>';
     }
-    output += details.name + '</td>';
+    output += '<a href="javascript:itemDetails(\'' + item + '\')">' + details.name + '</a></td>';
 
     values = ['cheap', 'normal', 'expensive'];
 
@@ -183,6 +282,10 @@ function addItem(item, indent)
 
 function displayMoney(value)
 {
+    if (value == 0) {
+        return "0 gp";
+    }
+
     var gp = Math.floor(value / 100);
     var sp = Math.floor((value - (gp * 100)) / 10);
     var cp = value - (gp * 100) - (sp * 10);
@@ -200,6 +303,16 @@ function displayMoney(value)
     }
 
     return coins.join(' ');
+}
+
+function displayBadge(text, type)
+{
+    if (type == 'primary') {
+        badgeClass = 'badge-primary';
+    } else if (type == 'info') {
+        badgeClass = 'badge-info';
+    }
+    return '<span class="badge badge-pill ' + badgeClass + '">' + text + '</span> ';
 }
 
 function getAlphaKeys(object)

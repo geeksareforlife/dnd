@@ -4,7 +4,7 @@
     "description": [
         "Objects viewed through a spyglass are magnified to twice their size."
     ],
-    "weight": "1 lb",
+    "weight": 1,
     "category": "adventuring gear",
     "subcategory": "",
     "cost": {

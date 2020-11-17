@@ -12,11 +12,25 @@
 
     <script type="text/javascript" src="../items.js"></script>
     <script type="text/javascript" src="shop.js"></script>
+
+    <style type="text/css">
+        div#sidebar form input.coin-input {
+            width: 50px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
 
-<h1>Shopkeeper</h1>
+<div class="row">
+    <div class="col-sm-4">
+        <h1>Shopkeeper</h1>
+    </div>
+    <div class="col-sm-8">
+        <p class="text-muted small text-right mt-2 mb-0">Based on the excellent work of <a href="https://www.reddit.com/r/DMAcademy/comments/9ebbdt/updated_more_inclusive_5e_dd_shops_catalog_v18/" target="_blank">/u/jrobharing, /u/Inalisk and /u/Shinotama</a>.</p>
+        <p class="text-muted small text-right">View on <a href="https://github.com/geeksareforlife/dnd/tree/main/shop">GitHub</a>.</p>
+    </div>
+</div>
 
 <p>What items will you have in your shop? Let's find out!</p>
 
@@ -28,7 +42,6 @@
                 <option value="-">- Select One -</option>
                 <option value="general">General Store</option>
                 <option value="adventuring supplies">Adventuring Supplies</option>
-                <option value="test">Test</option>
             </select>
         </div>
         <div class="form-group col-md-3">
@@ -66,7 +79,7 @@
 <div class="row mt-3">
     <div class="col-md-8">
         <h2 id="store-title"></h2>
-        <table class="table table-hover table-sm">
+        <table class="invisible table table-hover table-sm">
             <thead class="thead-dark">
                 <tr>
                     <th width="1%" class="sticky-top"></th>
@@ -84,11 +97,89 @@
 
     </div>
     <div class="col-md-4">
+        <div id="sidebar" class="invisible sticky-top">
+            <h3>Gold on Hand</h3>
+            <p><span class="gold font-weight-bold" id="goldDaily" data-coppers=""></span>
+                (<span class="gold font-weight-bold" id="goldCap" data-coppers=""></span> with DC)
+            </p>
+            <form class="form-inline">
+                <label class="sr-only" for="buyGP">Gold Pieces</label>
+                <div class="input-group input-group-sm mr-sm-2">
+                    <input type="text" class="form-control coin-input" id="buyGP" placeholder="0">
+                    <div class="input-group-append">
+                        <div class="input-group-text">gp</div>
+                    </div>
+                </div>
 
+                <label class="sr-only" for="buySP">Silver Pieces</label>
+                <div class="input-group input-group-sm mr-sm-2">
+                    <input type="text" class="form-control coin-input" id="buySP" placeholder="0">
+                    <div class="input-group-append">
+                        <div class="input-group-text">sp</div>
+                    </div>
+                </div>
+
+                <label class="sr-only" for="buyCP">Copper Pieces</label>
+                <div class="input-group input-group-sm mr-sm-2">
+                    <input type="text" class="form-control coin-input" id="buyCP" placeholder="0">
+                    <div class="input-group-append">
+                        <div class="input-group-text">cp</div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-sm" id="buy">Buy</button>
+            </form>
+        </div>
     </div>
 </div>
 
 
 </div>
+
+
+<div class="modal fade" id="itemDetails" tabindex="-1" aria-labelledby="itemDetailsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="itemDetailsLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8" id="itemDescription">
+                            Boo
+                        </div>
+                        <div class="col-md-4">
+                            <p>Weight: <strong id="itemWeight"></strong></p>
+                            <p><strong>Costs</strong><br>
+                                <span class="itemCost" id="itemCheap"></span> /
+                                <span class="itemCost" id="itemNormal"></span> /
+                                <span class="itemCost" id="itemExpensive"></span>
+                            </p>
+                            <p><strong>Buy for</strong><br>
+                                <span id="itemBuy"></span>
+                                (<span id="itemBuyMax"></span> max)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4" id="itemCategories">
+                        </div>
+                        <div class="col-md-8" id="itemStores">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

@@ -134,7 +134,7 @@ function parseItemHTML($html)
     $weightStart = strpos($html, '>', $weightPos) + 1;
     $weightEnd = strpos($html, '</span>', $weightStart);
     $weight = substr($html, $weightStart, $weightEnd - $weightStart);
-    $return['weight'] = str_replace(' lbs', '', $weight);
+    $return['weight'] = str_replace(' lb', '', str_replace(' lbs', '', $weight));
 
     $descPos = strpos($html, 'class="line gear height2 marginBottom20"');
     $descStart = strpos($html, '<div class="details-container-content-description-text">', $descPos) + 56;
