@@ -4,7 +4,7 @@
     "description": [
         "Proficiency with a dagger allows you to add your proficiency bonus to the attack roll for any attack you make with it."
     ],
-    "weight": "1 lb",
+    "weight": 1,
     "category": "weapons",
     "subcategory": "simple melee weapons",
     "cost": {

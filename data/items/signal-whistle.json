@@ -4,7 +4,7 @@
     "description": [
         "A small whistle used for signaling."
     ],
-    "weight": " -- ",
+    "weight": 0,
     "category": "adventuring gear",
     "subcategory": "",
     "cost": {

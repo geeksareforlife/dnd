@@ -4,7 +4,7 @@
     "description": [
         "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus."
     ],
-    "weight": "1 lb",
+    "weight": 1,
     "category": "tools",
     "subcategory": "musical instruments",
     "cost": {
