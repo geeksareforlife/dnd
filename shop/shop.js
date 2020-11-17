@@ -50,6 +50,50 @@ function toggleTheme()
     }
 }
 
+function itemDetails(itemID)
+{
+    var item = itemIndex[itemID];
+
+    // all of these are complete replacements
+    $('#itemDetailsLabel').html(toTitleCase(item.name));
+    $('#itemWeight').html(item.weight + " lb");
+    $('#itemCheap').html(displayMoney(item.cost.cheap));
+    $('#itemNormal').html(displayMoney(item.cost.normal));
+    $('#itemExpensive').html(displayMoney(item.cost.expensive));
+
+    $('.itemCost').removeClass('text-success');
+
+    $('#item' + toTitleCase(shopValue)).addClass('text-success');
+
+    // these need clearing before adding the new content
+    $('#itemDescription').html('');
+    $('#itemCategories').html('');
+    $('#itemStores').html('');
+
+    for (var i = 0; i < item.description.length; i++) {
+        $('#itemDescription').append('<p>' + item.description[i] + '</p>');
+    }
+
+    $('#itemCategories').append(displayBadge(item.category, 'primary'));
+    if (item.subcategory != "") {
+        $('#itemCategories').append(' / ' + displayBadge(item.subcategory, 'primary'));
+    }
+
+    for (store in item.stores) {
+        for (var j = 0; j < item.stores[store].length; j++) {
+            $('#itemStores').append(displayBadge(store + '-' + item.stores[store][j], 'primary'))
+        }
+    }
+
+    for (theme in item.themes) {
+        for (var j = 0; j < item.themes[theme].length; j++) {
+            $('#itemStores').append(displayBadge(theme + '-' + item.themes[theme][j], 'info'))
+        }
+    }
+
+    $('#itemDetails').modal({});
+}
+
 function buildShop()
 {
     var type = $('#type').val();
@@ -164,7 +208,7 @@ function addItem(item, indent)
     } else {
         output += '<td>';
     }
-    output += details.name + '</td>';
+    output += '<a href="javascript:itemDetails(\'' + item + '\')">' + details.name + '</a></td>';
 
     values = ['cheap', 'normal', 'expensive'];
 
@@ -200,6 +244,16 @@ function displayMoney(value)
     }
 
     return coins.join(' ');
+}
+
+function displayBadge(text, type)
+{
+    if (type == 'primary') {
+        badgeClass = 'badge-primary';
+    } else if (type == 'info') {
+        badgeClass = 'badge-info';
+    }
+    return '<span class="badge badge-pill ' + badgeClass + '">' + text + '</span> ';
 }
 
 function getAlphaKeys(object)

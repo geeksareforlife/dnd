@@ -28,7 +28,6 @@
                 <option value="-">- Select One -</option>
                 <option value="general">General Store</option>
                 <option value="adventuring supplies">Adventuring Supplies</option>
-                <option value="test">Test</option>
             </select>
         </div>
         <div class="form-group col-md-3">
@@ -90,5 +89,47 @@
 
 
 </div>
+
+
+<div class="modal fade" id="itemDetails" tabindex="-1" aria-labelledby="itemDetailsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="itemDetailsLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8" id="itemDescription">
+                            Boo
+                        </div>
+                        <div class="col-md-4">
+                            <p>Weight: <strong id="itemWeight"></strong></p>
+                            <p><strong>Costs</strong><br>
+                                Cheap: <strong class="itemCost" id="itemCheap"></strong><br>
+                                Normal: <strong class="itemCost" id="itemNormal"></strong><br>
+                                Expensive: <strong class="itemCost" id="itemExpensive"></strong><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4" id="itemCategories">
+                        </div>
+                        <div class="col-md-8" id="itemStores">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
