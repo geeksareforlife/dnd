@@ -5,6 +5,8 @@ $outputFile = '../items.js';
 
 $itemIndex = [];
 
+$searchIndex = [];
+
 $shopLists = [];
 
 $dir = new DirectoryIterator($itemFolder);
@@ -45,11 +47,13 @@ foreach ($dir as $fileinfo) {
         }
 
         $itemIndex[$item['id']] = $item;
+        $searchIndex[$item['name']] = $item['id'];
     }
 }
 
 $js = "var itemIndex = " . json_encode($itemIndex, JSON_NUMERIC_CHECK) . ";\n";
 $js .= "var shopLists = " . json_encode($shopLists, JSON_NUMERIC_CHECK) . ";\n";
+$js .= "var itemSearchIndex = " . json_encode($searchIndex, JSON_NUMERIC_CHECK) . ";\n";
 
 file_put_contents($outputFile, $js);
 
