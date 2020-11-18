@@ -39,6 +39,17 @@ $(document).ready(function() {
     $('#submit').click(buildShop);
 
     $('#buy').click(buyGoods);
+
+    $('#searchForm').submit(function() {
+        return false;
+    });
+
+    $("#search").autocomplete({
+        maximumItems: 8,
+        source: itemSearchIndex,
+        treshold: 1,
+        onSelectItem: foundItem
+    });
 });
 
 function toggleTheme()
@@ -50,6 +61,11 @@ function toggleTheme()
     } else {
         $('#theme').prop('disabled', true);
     }
+}
+
+function foundItem(selected, element)
+{
+    itemDetails(selected.value);
 }
 
 function itemDetails(itemID)
