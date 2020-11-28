@@ -1,0 +1,23 @@
+{
+    "id": "sickle",
+    "name": "Sickle",
+    "description": [
+        "Proficiency with a sickle allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 2,
+    "category": "weapons",
+    "subcategory": "simple melee weapons",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": {
+        "blacksmith": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/sickle"
+}

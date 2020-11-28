@@ -16,6 +16,11 @@
         "adventuring supplies": [
             "urban",
             "premium"
+        ],
+        "bowyer": [
+            "rural",
+            "urban",
+            "premium"
         ]
     },
     "themes": [],

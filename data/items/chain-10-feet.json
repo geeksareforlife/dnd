@@ -16,6 +16,12 @@
         "adventuring supplies": [
             "urban",
             "premium"
+        ],
+        "blacksmith": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
         ]
     },
     "themes": [],

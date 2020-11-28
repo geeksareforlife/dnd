@@ -12,7 +12,12 @@
         "cheap": 400,
         "expensive": 900
     },
-    "stores": [],
+    "stores": {
+        "leatherworker": [
+            "urban",
+            "premium"
+        ]
+    },
     "themes": {
         "art and games": [
             "rural",

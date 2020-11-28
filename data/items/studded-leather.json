@@ -15,6 +15,14 @@
     "stores": {
         "adventuring supplies": [
             "premium"
+        ],
+        "blacksmith": [
+            "premium"
+        ],
+        "leatherworker": [
+            "rural",
+            "urban",
+            "premium"
         ]
     },
     "themes": [],

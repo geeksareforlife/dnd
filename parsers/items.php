@@ -134,7 +134,7 @@ function parseItemHTML($html)
     $weightStart = strpos($html, '>', $weightPos) + 1;
     $weightEnd = strpos($html, '</span>', $weightStart);
     $weight = substr($html, $weightStart, $weightEnd - $weightStart);
-    $return['weight'] = str_replace(' lb', '', str_replace(' lbs', '', $weight));
+    $return['weight'] = parseWeight($weight);
 
     $descPos = strpos($html, 'class="line gear height2 marginBottom20"');
     $descStart = strpos($html, '<div class="details-container-content-description-text">', $descPos) + 56;
@@ -143,6 +143,39 @@ function parseItemHTML($html)
     $return['description'] = getLines($desc);
 
     return $return;
+}
+
+function parseWeight($weight)
+{
+    // first, get rid of any lb signs
+    $weight = str_replace(' lb', '', str_replace(' lbs', '', $weight));
+
+    if (strpos($weight, '--') !== false) {
+        return 0;
+    }
+
+    $whole = 0;
+    $fraction = 0;
+
+    if (strpos($weight, ' ') !== false) {
+        // we have two parts to the number, int and then fraction
+        $parts = explode(' ', $weight);
+        $whole = intval($parts[0]);
+        $fraction = $parts[1];
+    } elseif (strpos($weight, '/') !== false) {
+        // just a fractional
+        $fraction = $weight;
+    } else {
+        $whole = intval($weight);
+    }
+
+    if ($fraction != "") {
+        $parts = explode('/', $fraction);
+
+        $fraction = intval($parts[0])/intval($parts[1]);
+    }
+    
+    return $whole + $fraction;
 }
 
 function getLines($htmlString)

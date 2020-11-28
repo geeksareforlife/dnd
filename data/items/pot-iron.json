@@ -24,6 +24,10 @@
             "rural",
             "urban",
             "premium"
+        ],
+        "blacksmith": [
+            "rural",
+            "urban"
         ]
     },
     "themes": [],

@@ -1,0 +1,25 @@
+{
+    "id": "breastplate",
+    "name": "Breastplate",
+    "description": [
+        "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
+    ],
+    "weight": 20,
+    "category": "armor",
+    "subcategory": "medium armor",
+    "cost": {
+        "normal": 40000,
+        "cheap": 30000,
+        "expensive": 60000
+    },
+    "stores": {
+        "blacksmith": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/breastplate"
+}

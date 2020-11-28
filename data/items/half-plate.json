@@ -1,0 +1,22 @@
+{
+    "id": "half-plate",
+    "name": "Half Plate",
+    "description": [
+        "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps."
+    ],
+    "weight": 40,
+    "category": "armor",
+    "subcategory": "medium armor",
+    "cost": {
+        "normal": 75000,
+        "cheap": 56200,
+        "expensive": 112500
+    },
+    "stores": {
+        "blacksmith": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/half-plate"
+}

@@ -1,0 +1,25 @@
+{
+    "id": "longsword",
+    "name": "Longsword",
+    "description": [
+        "Proficiency with a longsword allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 3,
+    "category": "weapons",
+    "subcategory": "martial melee weapons",
+    "cost": {
+        "normal": 1500,
+        "cheap": 1100,
+        "expensive": 2200
+    },
+    "stores": {
+        "blacksmith": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/longsword"
+}

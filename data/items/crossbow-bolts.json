@@ -17,6 +17,11 @@
             "limited",
             "urban",
             "premium"
+        ],
+        "bowyer": [
+            "rural",
+            "urban",
+            "premium"
         ]
     },
     "themes": [],

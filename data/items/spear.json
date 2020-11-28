@@ -12,7 +12,14 @@
         "cheap": 70,
         "expensive": 200
     },
-    "stores": [],
+    "stores": {
+        "blacksmith": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
     "themes": {
         "water-side": [
             "rural",

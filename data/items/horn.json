@@ -12,7 +12,11 @@
         "cheap": 200,
         "expensive": 500
     },
-    "stores": [],
+    "stores": {
+        "blacksmith": [
+            "premium"
+        ]
+    },
     "themes": {
         "art and games": [
             "urban",

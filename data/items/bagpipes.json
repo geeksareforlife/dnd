@@ -12,7 +12,11 @@
         "cheap": 2200,
         "expensive": 4500
     },
-    "stores": [],
+    "stores": {
+        "leatherworker": [
+            "premium"
+        ]
+    },
     "themes": {
         "art and games": [
             "premium"

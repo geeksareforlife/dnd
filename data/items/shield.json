@@ -1,0 +1,29 @@
+{
+    "id": "shield",
+    "name": "Shield",
+    "description": [
+        "A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+    ],
+    "weight": 6,
+    "category": "armor",
+    "subcategory": "shield",
+    "cost": {
+        "normal": 1000,
+        "cheap": 700,
+        "expensive": 1500
+    },
+    "stores": {
+        "blacksmith": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ],
+        "leatherworker": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/shield"
+}

@@ -1,0 +1,25 @@
+{
+    "id": "shortsword",
+    "name": "Shortsword",
+    "description": [
+        "Proficiency with a shortsword allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 2,
+    "category": "weapons",
+    "subcategory": "martial melee weapons",
+    "cost": {
+        "normal": 1000,
+        "cheap": 700,
+        "expensive": 1500
+    },
+    "stores": {
+        "blacksmith": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/shortsword"
+}

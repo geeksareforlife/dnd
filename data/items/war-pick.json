@@ -1,0 +1,23 @@
+{
+    "id": "war-pick",
+    "name": "War Pick",
+    "description": [
+        "Proficiency with a war pick allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 2,
+    "category": "weapons",
+    "subcategory": "martial melee weapons",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "blacksmith": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/war-pick"
+}
