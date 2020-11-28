@@ -1,0 +1,24 @@
+{
+    "id": "ring-mail",
+    "name": "Ring Mail",
+    "description": [
+        "This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor."
+    ],
+    "weight": 40,
+    "category": "armor",
+    "subcategory": "heavy armor",
+    "cost": {
+        "normal": 3000,
+        "cheap": 2200,
+        "expensive": 4500
+    },
+    "stores": {
+        "blacksmith": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/ring-mail"
+}

@@ -1,0 +1,22 @@
+{
+    "id": "ball-bearings-bag-of-1-000",
+    "name": "Ball Bearings (bag of 1,000)",
+    "description": [],
+    "weight": 2,
+    "category": "adventuring gear",
+    "subcategory": "",
+    "cost": {
+        "normal": 100,
+        "cheap": 70,
+        "expensive": 200
+    },
+    "stores": {
+        "blacksmith": [
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/ball-bearings-bag-of-1-000"
+}

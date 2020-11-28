@@ -16,6 +16,12 @@
         "adventuring supplies": [
             "urban",
             "premium"
+        ],
+        "leatherworker": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
         ]
     },
     "themes": [],

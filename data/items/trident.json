@@ -1,0 +1,22 @@
+{
+    "id": "trident",
+    "name": "Trident",
+    "description": [
+        "Proficiency with a trident allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 4,
+    "category": "weapons",
+    "subcategory": "martial melee weapons",
+    "cost": {
+        "normal": 500,
+        "cheap": 300,
+        "expensive": 800
+    },
+    "stores": {
+        "blacksmith": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/trident"
+}

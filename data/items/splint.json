@@ -1,0 +1,23 @@
+{
+    "id": "splint",
+    "name": "Splint",
+    "description": [
+        "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints."
+    ],
+    "weight": 60,
+    "category": "armor",
+    "subcategory": "heavy armor",
+    "cost": {
+        "normal": 20000,
+        "cheap": 15000,
+        "expensive": 30000
+    },
+    "stores": {
+        "blacksmith": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/splint"
+}

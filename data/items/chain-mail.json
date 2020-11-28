@@ -1,0 +1,25 @@
+{
+    "id": "chain-mail",
+    "name": "Chain Mail",
+    "description": [
+        "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets."
+    ],
+    "weight": 55,
+    "category": "armor",
+    "subcategory": "heavy armor",
+    "cost": {
+        "normal": 7500,
+        "cheap": 5600,
+        "expensive": 11300
+    },
+    "stores": {
+        "blacksmith": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/chain-mail"
+}

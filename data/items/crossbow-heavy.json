@@ -15,6 +15,11 @@
     "stores": {
         "adventuring supplies": [
             "premium"
+        ],
+        "bowyer": [
+            "rural",
+            "urban",
+            "premium"
         ]
     },
     "themes": [],

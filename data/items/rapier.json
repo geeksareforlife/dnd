@@ -1,0 +1,22 @@
+{
+    "id": "rapier",
+    "name": "Rapier",
+    "description": [
+        "Proficiency with a rapier allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 2,
+    "category": "weapons",
+    "subcategory": "martial melee weapons",
+    "cost": {
+        "normal": 2500,
+        "cheap": 1800,
+        "expensive": 3800
+    },
+    "stores": {
+        "blacksmith": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/rapier"
+}

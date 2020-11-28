@@ -1,0 +1,23 @@
+{
+    "id": "halberd",
+    "name": "Halberd",
+    "description": [
+        "Proficiency with a halberd allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 6,
+    "category": "weapons",
+    "subcategory": "martial melee weapons",
+    "cost": {
+        "normal": 2000,
+        "cheap": 1500,
+        "expensive": 3000
+    },
+    "stores": {
+        "blacksmith": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/halberd"
+}

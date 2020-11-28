@@ -15,6 +15,12 @@
     "stores": {
         "general": [
             "premium"
+        ],
+        "blacksmith": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
         ]
     },
     "themes": [],

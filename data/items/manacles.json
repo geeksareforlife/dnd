@@ -12,7 +12,12 @@
         "cheap": 100,
         "expensive": 300
     },
-    "stores": [],
+    "stores": {
+        "blacksmith": [
+            "urban",
+            "premium"
+        ]
+    },
     "themes": {
         "shady dealer": [
             "premium"

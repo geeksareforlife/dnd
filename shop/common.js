@@ -28,7 +28,52 @@ var shops = {
                 'expensive': 226000
             }
         }
-    }
+    },
+    'blacksmith': {
+        'name': "Blacksmith / Armory",
+        'funds': {
+            'daily': {
+                'normal': 100000,
+                'cheap': 75000,
+                'expensive': 150000
+            },
+            'cap': {
+                'normal': 200000,
+                'cheap': 150000,
+                'expensive': 300000
+            }
+        }
+    },
+    'bowyer': {
+        'name': "Fletcher / Bowyer",
+        'funds': {
+            'daily': {
+                'normal': 50000,
+                'cheap': 37500,
+                'expensive': 75000
+            },
+            'cap': {
+                'normal': 100000,
+                'cheap': 75000,
+                'expensive': 150000
+            }
+        }
+    },
+    'leatherworker': {
+        'name': "Leatherworker",
+        'funds': {
+            'daily': {
+                'normal': 50000,
+                'cheap': 37500,
+                'expensive': 75000
+            },
+            'cap': {
+                'normal': 100000,
+                'cheap': 75000,
+                'expensive': 150000
+            }
+        }
+    },
 };
 
 function getShopItems(type, locale, theme)

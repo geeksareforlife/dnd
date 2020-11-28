@@ -1,0 +1,23 @@
+{
+    "id": "maul",
+    "name": "Maul",
+    "description": [
+        "Proficiency with a maul allows you to add your proficiency bonus to the attack roll for any attack you make with it."
+    ],
+    "weight": 10,
+    "category": "weapons",
+    "subcategory": "martial melee weapons",
+    "cost": {
+        "normal": 1000,
+        "cheap": 700,
+        "expensive": 1500
+    },
+    "stores": {
+        "blacksmith": [
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/maul"
+}

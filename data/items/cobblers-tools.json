@@ -17,6 +17,11 @@
             "rural",
             "urban",
             "premium"
+        ],
+        "leatherworker": [
+            "rural",
+            "urban",
+            "premium"
         ]
     },
     "themes": [],

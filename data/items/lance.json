@@ -1,0 +1,23 @@
+{
+    "id": "lance",
+    "name": "Lance",
+    "description": [
+        "Proficiency with a lance allows you to add your proficiency bonus to the attack roll for any attack you make with it.",
+        "You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
+    ],
+    "weight": 6,
+    "category": "weapons",
+    "subcategory": "martial melee weapons",
+    "cost": {
+        "normal": 1000,
+        "cheap": 700,
+        "expensive": 1500
+    },
+    "stores": {
+        "blacksmith": [
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": "https:\/\/www.dndbeyond.com\/equipment\/lance"
+}

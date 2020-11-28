@@ -73,7 +73,7 @@ function validate(shopDetails)
 function buildShop(shopDetails)
 {
     // name
-    $('#shopname').html(toTitleCase(shopDetails[0]))
+    $('#shopname').html(shops[shopDetails[0]].name)
 
     // store global vars
     shopValue = shopDetails[2];

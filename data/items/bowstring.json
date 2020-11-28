@@ -1,0 +1,25 @@
+{
+    "id": "bowstring",
+    "name": "Bowstring (5)",
+    "description": [
+        "Replacement strings for your bow"
+    ],
+    "weight": 1,
+    "category": "adventuring gear",
+    "subcategory": "ammunition",
+    "cost": {
+        "normal": 200,
+        "cheap": 100,
+        "expensive": 300
+    },
+    "stores": {
+        "bowyer": [
+            "limited",
+            "rural",
+            "urban",
+            "premium"
+        ]
+    },
+    "themes": [],
+    "url": ""
+}
