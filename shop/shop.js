@@ -70,7 +70,7 @@ function buildShop()
     }
 
     // set the name of the shop
-    $('#store-title').html(toTitleCase(type));
+    $('#store-title').html(shops[type].name);
 
 
     // copy the array!
