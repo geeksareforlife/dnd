@@ -24,7 +24,7 @@
         "INT": {
             "name": "Intelligence",
             "score": 8,
-            "modifier": "\u22121"
+            "modifier": "-1"
         },
         "WIS": {
             "name": "Wisdom",

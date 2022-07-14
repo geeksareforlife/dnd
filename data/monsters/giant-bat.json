@@ -24,7 +24,7 @@
         "INT": {
             "name": "Intelligence",
             "score": 2,
-            "modifier": "\u22124"
+            "modifier": "-4"
         },
         "WIS": {
             "name": "Wisdom",
@@ -34,7 +34,7 @@
         "CHA": {
             "name": "Charisma",
             "score": 6,
-            "modifier": "\u22122"
+            "modifier": "-2"
         }
     },
     "ac": {

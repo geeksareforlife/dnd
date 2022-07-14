@@ -9,7 +9,7 @@
         "STR": {
             "name": "Strength",
             "score": 5,
-            "modifier": "\u22123"
+            "modifier": "-3"
         },
         "DEX": {
             "name": "Dexterity",
@@ -24,17 +24,17 @@
         "INT": {
             "name": "Intelligence",
             "score": 1,
-            "modifier": "\u22125"
+            "modifier": "-5"
         },
         "WIS": {
             "name": "Wisdom",
             "score": 7,
-            "modifier": "\u22122"
+            "modifier": "-2"
         },
         "CHA": {
             "name": "Charisma",
             "score": 3,
-            "modifier": "\u22124"
+            "modifier": "-4"
         }
     },
     "ac": {
